@@ -1,0 +1,22 @@
+.btn {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: aliceblue;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+
+}
+
+.btn--aceptar {
+    @extend .btn;
+    background-color: green;
+
+}
+
+.btn--cancelar {
+    @extend .btn;
+    background-color: rgb(196, 75, 5);
+}

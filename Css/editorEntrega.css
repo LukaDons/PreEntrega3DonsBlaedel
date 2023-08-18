@@ -1,0 +1,87 @@
+main {
+  margin: 0;
+  padding: 5px;
+  background-color: red;
+}
+main section {
+  width: 50%;
+}
+main section article h1 {
+  font-size: 2rem;
+  color: gold;
+}
+main section article p {
+  line-height: 10px;
+  font-size: 1.5rem;
+}
+main aside {
+  background-color: red;
+}
+main aside p {
+  font-size: 3rem;
+}
+
+#indexMain {
+  background-image: url(https://josecarlosalmansa.com/img/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg);
+  height: 98vh;
+  width: 100vw;
+  grid-area: indexMain;
+  min-height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas: "indexMainUno indexMainUno indexMainUno" "indexMainUno indexMainUno indexMainUno" "indexMainUno indexMainUno indexMainUno";
+}
+#indexMain #indexMainUno {
+  grid-area: indexMainUno;
+  justify-self: center;
+  align-content: center;
+  text-align: center;
+  background-position: center bottom;
+  background-position: left;
+  padding: 200px;
+}
+#indexMain #indexMainDos {
+  grid-area: indexMainDos;
+}
+
+#skillsMain {
+  grid-area: skillsMain;
+  height: 72.6vh;
+  display: grid;
+  grid-template-columns: 3fr 1, 5fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas: "skillsMainUno skillsMainDos" "skillsMainUno skillsMainDos";
+}
+#skillsMain #skillsMainUno {
+  grid-area: skillsMainUno;
+  padding: 10px;
+}
+#skillsMain #skillsMainDos {
+  grid-area: skillsMainDos;
+}
+
+#serviciosMain {
+  height: 100vh;
+  grid-area: serviciosMain;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "serviciosMainUno serviciosMainUno" "serviciosMainDos serviciosMainDos";
+}
+#serviciosMain #serviciosMainUno {
+  grid-area: serviciosMainUno;
+  padding: 10px;
+}
+#serviciosMain #serviciosMainDos {
+  grid-area: serviciosMainDos;
+  padding: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=editorEntrega.css.map */

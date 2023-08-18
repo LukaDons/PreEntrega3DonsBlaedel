@@ -1,0 +1,75 @@
+#headerServicios {
+    margin: 0;
+    padding: 7px;
+    background-color: $c-principal;
+    @include nav-header
+}
+
+header {
+    background-color: rgba(68, 66, 66, 0.925);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+#indexHeader {
+    grid-area: indexHeader;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "indexHeaderUno indexHeaderDos"
+    "indexHeaderUno indexHeaderDos";
+    height: 100px;
+
+    #indexHeaderUno {
+        grid-area: indexHeaderUno;
+    }
+    
+    #indexHeaderDos {
+        grid-area: indexHeaderDos;
+        justify-self: end;
+        padding: 25px;
+    
+    }
+}
+
+#skillsHeader {
+    grid-area: skillsHeader;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "skillsHeaderUno skillsHeaderDos"
+    "skillsHeaderUno skillsHeaderDos";
+    height: 100px;
+
+    #skillsHeaderUno {
+        grid-area: skillsHeaderUno;
+    
+    }
+}
+
+#serviciosHeader {
+    grid-area: serviciosHeader;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas: 
+    "serviciosHeaderUno serviciosHeaderDos";
+    height: 100px;
+
+    #serviciosHeaderUno {
+        grid-area: serviciosHeaderUno;
+    }
+    
+    #serviciosHeaderDos {
+        grid-area: serviciosHeaderDos;
+        justify-self: end;
+        margin-right: 18px;
+        margin-bottom: 10px;
+        padding: 30px;
+    
+    }
+}

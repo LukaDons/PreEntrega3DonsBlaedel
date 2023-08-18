@@ -1,0 +1,31 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    background-color: rgba(128, 128, 128, 0.925);
+    height: 98vh;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 98vh;
+}
+
+#indexBody {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 0,5fr 3fr 0,7fr;
+    grid-template-areas: 
+    "indexHeader indexHeader indexHeader"
+    "indexMain indexMain indexMain"
+    "indexFooter indexFooter indexFooter";
+}
+
+#skillsBody {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 0.5fr 3fr 0.7fr;
+    grid-template-areas: 
+    "skillsHeader skillsHeader skillsHeader"
+    "skillsMain skillsMain skillsMain"
+    "skillsFooter skillsFooter skillsFooter";
+}

@@ -1,0 +1,394 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    background-color: rgba(128, 128, 128, 0.925);
+    height: 98vh;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+nav a {
+    font-weight: 600px;
+    padding-right: 10px;
+    font-size: 23px;
+    text-decoration: underline;
+}
+
+nav a:hover {
+    color: aliceblue;
+}
+
+
+
+header {
+    background-color: rgba(68, 66, 66, 0.925);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.contact-Skills {
+    margin: 50px;
+}
+
+.contact-Skills_img {
+   width: 600px;
+   height: 600px;
+}
+
+#unic   {
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: antiquewhite;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+}
+
+#unic ::before {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,
+    red,blue, deeppink, blue, red,blue, deeppink, blue);
+background-size: 800%;
+border-radius: 10px;
+filter: blur(8px);
+animation: glowing 20s linear infinite;
+
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+.contact-iconos {
+    width: 70px;
+    height: 80px;
+    
+}
+
+.Porfo {
+    background-color: darkgray;
+    width: 300px;
+    height: 125px;
+    margin: 50px;
+    padding: 50px;
+    
+   
+   
+}
+
+
+
+#indexBody {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 0,5fr 3fr 0,7fr;
+    grid-template-areas: 
+    "indexHeader indexHeader indexHeader"
+    "indexMain indexMain indexMain"
+    "indexFooter indexFooter indexFooter";
+}
+
+#indexHeader {
+    grid-area: indexHeader;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "indexHeaderUno indexHeaderDos"
+    "indexHeaderUno indexHeaderDos";
+    height: 100px;
+
+}
+
+#indexHeaderUno {
+    grid-area: indexHeaderUno;
+}
+
+#indexHeaderDos {
+    grid-area: indexHeaderDos;
+    justify-self: end;
+    padding: 25px;
+
+}
+
+#indexMain {
+    background-image: url(https://josecarlosalmansa.com/img/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg);
+    height: 98vh;
+    width: 100vw;
+    grid-area: indexMain;
+    min-height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas: 
+    "indexMainUno indexMainUno indexMainUno"
+    "indexMainUno indexMainUno indexMainUno"
+    "indexMainUno indexMainUno indexMainUno";
+}
+
+#indexMainUno {
+    grid-area: indexMainUno;
+    justify-self: center;
+    align-content: center;
+    text-align: center;
+    background-position: center bottom;
+    background-position: left;
+    padding: 200px;
+    
+}
+
+#indexMainDos {
+    grid-area: indexMainDos;
+}
+
+#indexFooter {
+    grid-area: indexFooter;
+    display: grid;
+}
+
+
+
+
+
+
+#skillsBody {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 0.5fr 3fr 0.7fr;
+    grid-template-areas: 
+    "skillsHeader skillsHeader skillsHeader"
+    "skillsMain skillsMain skillsMain"
+    "skillsFooter skillsFooter skillsFooter";
+}
+
+#skillsHeader {
+    grid-area: skillsHeader;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "skillsHeaderUno skillsHeaderDos"
+    "skillsHeaderUno skillsHeaderDos";
+    height: 100px;
+
+}
+
+#skillsHeaderUno {
+    grid-area: skillsHeaderUno;
+
+}
+
+#skillsHeaderDos {
+    grid-area: skillsHeaderDos;
+    justify-self: end;
+        margin-right: 18px;
+        margin-bottom: 10px;
+        padding: 30px;
+    
+
+}
+
+#skillsMain {
+    grid-area: skillsMain;
+    height: 72.6vh;
+    display: grid;
+    grid-template-columns: 3fr 1,5fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas: 
+    "skillsMainUno skillsMainDos"
+    "skillsMainUno skillsMainDos";
+}
+
+#skillsMainUno {
+    grid-area: skillsMainUno;
+    padding: 10px;
+}
+
+#skillsMainDos {
+    grid-area: skillsMainDos;
+    
+}
+
+#skillsFooter {
+    grid-area: skillsFooter
+   }
+
+#serviciosBody {
+    display: grid;
+    width: 98vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 0,7fr;
+    grid-template-areas: 
+    "serviciosHeader serviciosHeader serviciosHeader"
+    "serviciosMain serviciosMain serviciosMain"
+    "serviciosFooter serviciosFooter serviciosFooter";
+
+}
+
+#serviciosHeader {
+    grid-area: serviciosHeader;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas: 
+    "serviciosHeaderUno serviciosHeaderDos";
+    height: 100px;
+
+}
+
+
+
+
+#serviciosHeaderUno {
+    grid-area: serviciosHeaderUno;
+}
+
+#serviciosHeaderDos {
+    grid-area: serviciosHeaderDos;
+    justify-self: end;
+    margin-right: 18px;
+    margin-bottom: 15px;
+
+}
+
+#serviciosMain {
+    height: 100vh;
+    grid-area: serviciosMain;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "serviciosMainUno serviciosMainUno"
+    "serviciosMainDos serviciosMainDos";
+
+}
+
+#serviciosMainUno {
+    grid-area: serviciosMainUno;
+    padding: 10px;
+}
+
+#serviciosMainDos {
+    grid-area: serviciosMainDos;
+    padding: 10px;
+}
+
+#serviciosFooter {
+    grid-area: serviciosFooter;
+}
+
+#contactMainUno {
+    margin: 10px;
+}
+
+#contactMainDos {
+    margin: 15px;
+    padding: 10px;
+    border: 5px solid black;
+    width: fit-content;
+    
+}
+
+footer {
+    display: grid;
+    height: 200px;
+    width: 100vw;
+    background-color: rgba(68, 66, 66, 0.925);
+   
+
+    bottom: 0;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1,5fr 1fr;
+    grid-template-areas: "footerUno footerDos footerTres"
+    "footerUno footerCuatro footerTres";
+    
+}
+
+#footerUno {
+    grid-area: footerUno;
+    justify-self: right;
+    align-self: center;
+    padding: 5px;
+}
+
+#footerDos {
+    grid-area: footerDos;
+    justify-self: center;
+    align-self: center;
+    padding: 5px;
+}
+
+#footerTres {
+    grid-area: footerTres;
+    justify-self: left;
+    align-self: center;
+    padding: 5px;
+}
+
+#footerCuatro {
+    grid-area: footerCuatro;
+    align-self: center;
+    justify-self: center;
+    padding: 5px;
+}
+
+@media (max-width: 320px) {
+    #serviciosMain {
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "skillsMainDos skillsMainUno ";
+    }
+}
+
+@media (max-width: 320px) {
+    #skillsMain {
+        grid-template-columns: 3fr 1,5fr;
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-areas: 
+        "skillsMainUno skillsMainDos"
+        "skillsMainUno skillsMainDos";
+    }
+}
+
+@media (max-width: 320px) {
+    footer {
+       
+        grid-area: footer;
+
+        grid-template-columns: 0.6fr 0.4fr;
+
+
+        grid-template-areas: 
+        "footer footerDos";
+    }
+}
