@@ -35,14 +35,7 @@ header {
     padding: 15px;
 }
 
-.contact-Skills {
-    margin: 50px;
-}
 
-.contact-Skills_img {
-   width: 600px;
-   height: 600px;
-}
 
 #unic   {
     background-color: black;
@@ -235,12 +228,17 @@ animation: glowing 20s linear infinite;
 
 #skillsMainDos {
     grid-area: skillsMainDos;
-    
+    margin: 50px;
 }
 
+#skillsMainDos_img {
+    width: 600px;
+    height: 600px;
+ }
+
 #skillsFooter {
-    grid-area: skillsFooter
-   }
+    grid-area: skillsFooter;
+    }
 
 #serviciosBody {
     display: grid;
@@ -306,17 +304,75 @@ animation: glowing 20s linear infinite;
     grid-area: serviciosFooter;
 }
 
-#contactMainUno {
-    margin: 10px;
+#porfolioBody {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 0.5fr 3fr 0.7fr;
+    grid-template-areas: 
+    "porfolioHeader porfolioHeader porfolioHeader"
+    "porfolioMain porfolioMain porfolioMain"
+    "porfolioFooter porfolioFooter porfolioFooter";
 }
 
-#contactMainDos {
-    margin: 15px;
+#porfolioHeader {
+    grid-area: porfolioHeader;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "porfolioHeaderUno porfolioHeaderDos"
+    "porfolioHeaderUno porfolioHeaderDos";
+    height: 100px;
+
+}
+
+#porfolioHeaderUno {
+    grid-area: porfolioHeaderUno;
+
+}
+
+#porfolioHeaderDos {
+    grid-area: porfolioHeaderDos;
+    justify-self: end;
+        margin-right: 18px;
+        margin-bottom: 10px;
+        padding: 30px;
+    
+
+}
+
+#porfolioMain {
+    grid-area: porfolioMain;
+    height: 72.6vh;
+    display: grid;
+    grid-template-columns: 3fr 1,5fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas: 
+    "porfolioMainUno porfolioMainDos"
+    "porfolioMainUno porfolioMainDos";
+}
+
+#porfolioMainUno {
+    grid-area: porfolioMainUno;
     padding: 10px;
-    border: 5px solid black;
-    width: fit-content;
+}
+
+#porfolioMainDos {
+    grid-area: porfolioMainDos;
+    margin: 50px;
+}
+
+#skillsMainDos_img {
+    width: 600px;
+    height: 600px;
+ }
+
+#skillsFooter {
+    grid-area: skillsFooter;
     
 }
+
+
 
 footer {
     display: grid;

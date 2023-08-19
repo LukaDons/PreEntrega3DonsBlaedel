@@ -1,3 +1,43 @@
+.btn, .btn--cancelar, .btn--aceptar {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  color: aliceblue;
+  border: 2px solid black;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.contact-iconos {
+  width: 70px;
+  height: 80px;
+}
+
+.btn--aceptar {
+  background-color: green;
+}
+
+.btn--cancelar {
+  background-color: rgb(196, 75, 5);
+}
+
+.section {
+  color: orange;
+}
+
+.titulo {
+  color: red;
+}
+
+.parrafo {
+  color: green;
+}
+
+.medida {
+  color: 100px;
+}
+
 main {
   margin: 0;
   padding: 5px;
@@ -57,6 +97,31 @@ main aside p {
   grid-area: skillsMainUno;
   padding: 10px;
 }
+#skillsMain #skillsMainUno #unic {
+  background-color: black;
+  cursor: pointer;
+  border: none;
+  padding: 16px 32px;
+  color: antiquewhite;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  border-radius: 12px;
+}
+#skillsMain #skillsMainUno #unic ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+  background-size: 800%;
+  border-radius: 10px;
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+}
 #skillsMain #skillsMainDos {
   grid-area: skillsMainDos;
 }
@@ -69,15 +134,221 @@ main aside p {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "serviciosMainUno serviciosMainUno" "serviciosMainDos serviciosMainDos";
 }
+#serviciosMain .contact-iconos {
+  width: 70px;
+  height: 80px;
+}
 #serviciosMain #serviciosMainUno {
   grid-area: serviciosMainUno;
   padding: 10px;
 }
 #serviciosMain #serviciosMainDos {
   grid-area: serviciosMainDos;
-  padding: 10px;
+  margin: 50px;
+}
+#serviciosMain #skillsMainDos_img {
+  width: 600px;
+  height: 600px;
 }
 
+.Porfo {
+  background-color: darkgray;
+  width: 300px;
+  height: 125px;
+  margin: 50px;
+  padding: 50px;
+}
+
+footer {
+  display: grid;
+  background-color: rgba(68, 66, 66, 0.925);
+  height: 200px;
+  width: 100vw;
+  bottom: 0;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: 1, 5fr 1fr;
+  grid-template-areas: "footerUno footerDos footerTres" "footerUno footerCuatro footerTres";
+}
+footer #footerUno {
+  grid-area: footerUno;
+  justify-self: right;
+  align-self: center;
+  padding: 5px;
+}
+footer #footerDos {
+  grid-area: footerDos;
+  justify-self: center;
+  align-self: center;
+  padding: 5px;
+}
+footer #footerTres {
+  grid-area: footerTres;
+  justify-self: left;
+  align-self: center;
+  padding: 5px;
+}
+footer #footerCuatro {
+  grid-area: footerCuatro;
+  align-self: center;
+  justify-self: center;
+  padding: 5px;
+}
+
+#indexFooter {
+  grid-area: indexFooter;
+  display: grid;
+}
+
+#skillsFooter {
+  grid-area: skillsFooter;
+}
+
+#serviciosFooter {
+  grid-area: serviciosFooter;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2rem;
+  background-color: rgba(128, 128, 128, 0.925);
+  height: 98vh;
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 98vh;
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+body nav a {
+  font-weight: 600px;
+  padding-right: 10px;
+  font-size: 23px;
+  text-decoration: underline;
+}
+body nav a:hover {
+  color: aliceblue;
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+
+#indexBody {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 0, 5fr 3fr 0, 7fr;
+  grid-template-areas: "indexHeader indexHeader indexHeader" "indexMain indexMain indexMain" "indexFooter indexFooter indexFooter";
+}
+
+#skillsBody {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 0.5fr 3fr 0.7fr;
+  grid-template-areas: "skillsHeader skillsHeader skillsHeader" "skillsMain skillsMain skillsMain" "skillsFooter skillsFooter skillsFooter";
+}
+
+#headerServicios {
+  margin: 0;
+  padding: 7px;
+  background-color: rgb(3, 88, 24);
+}
+#headerServicios nav {
+  width: 100px;
+}
+#headerServicios nav ul {
+  list-style-type: none;
+  text-align: center;
+  color: rgb(3, 88, 24);
+}
+#headerServicios nav ul li {
+  list-style-type: none;
+}
+#headerServicios nav ul li:hover {
+  color: red;
+}
+#headerServicios nav ul li a {
+  text-decoration: none;
+}
+#headerServicios nav ul li a:hover {
+  color: rgb(3, 88, 24);
+}
+
+header {
+  background-color: rgba(68, 66, 66, 0.925);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+#indexHeader {
+  grid-area: indexHeader;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "indexHeaderUno indexHeaderDos" "indexHeaderUno indexHeaderDos";
+  height: 100px;
+}
+#indexHeader #indexHeaderUno {
+  grid-area: indexHeaderUno;
+}
+#indexHeader #indexHeaderDos {
+  grid-area: indexHeaderDos;
+  justify-self: end;
+  padding: 25px;
+}
+
+#skillsHeader {
+  grid-area: skillsHeader;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "skillsHeaderUno skillsHeaderDos" "skillsHeaderUno skillsHeaderDos";
+  height: 100px;
+}
+#skillsHeader #skillsHeaderUno {
+  grid-area: skillsHeaderUno;
+}
+
+#serviciosHeader {
+  grid-area: serviciosHeader;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "serviciosHeaderUno serviciosHeaderDos";
+  height: 100px;
+}
+#serviciosHeader #serviciosHeaderUno {
+  grid-area: serviciosHeaderUno;
+}
+#serviciosHeader #serviciosHeaderDos {
+  grid-area: serviciosHeaderDos;
+  justify-self: end;
+  margin-right: 18px;
+  margin-bottom: 10px;
+  padding: 30px;
+}
+
+@media (max-width: 320px) {
+  #serviciosMain {
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "skillsMainDos skillsMainUno ";
+  }
+  #skillsMain {
+    grid-template-columns: 3fr 1, 5fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas: "skillsMainUno skillsMainDos" "skillsMainUno skillsMainDos";
+  }
+  footer {
+    grid-area: footer;
+    grid-template-columns: 0.6fr 0.4fr;
+    grid-template-areas: "footer footerDos";
+  }
+}
 body {
   margin: 0;
   padding: 0;
