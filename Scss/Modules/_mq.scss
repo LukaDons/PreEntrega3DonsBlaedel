@@ -1,4 +1,5 @@
-@media (max-width: 320px) {
+// MOBILE
+@media (min-width: 300px) and (max-width: 576px){
     #serviciosMain {
         grid-template-columns: 2fr 2fr;
         grid-template-rows: 1fr;

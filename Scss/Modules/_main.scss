@@ -1,7 +1,6 @@
 main {
     margin: 0;
     padding: 5px;
-    background-color: $c-secundario;
     section {
         width: 50%;
         article {
@@ -104,6 +103,12 @@ main {
     
     #skillsMainDos {
         grid-area: skillsMainDos;
+        padding: 30px;
+
+        #skillsMainDos_img {
+            width: 600px;
+            height: 600px;
+         }
     }
 }
 
@@ -126,6 +131,7 @@ main {
     #serviciosMainUno {
         grid-area: serviciosMainUno;
         padding: 10px;
+        margin: 50px;
     }
     
     #serviciosMainDos {
@@ -133,24 +139,39 @@ main {
         margin: 50px;
     }
 
-    #skillsMainDos_img {
-        width: 600px;
-        height: 600px;
-     }
-
 
         
 }
 
-.Porfo {
-    background-color: darkgray;
-    width: 300px;
-    height: 125px;
-    margin: 50px;
-    padding: 50px;
-    
-   
-   
+#porfolioMaiin {
+    grid-area: porfolioMain;
+    height: 72.6vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-areas: 
+    "porfolioMainDos porfolioMainUno porfolioMainDos" 
+    "porfolioMainDos porfolioMainUno porfolioMainDos";
+
+    #porfolioMainUno {
+        grid-area: porfolioMainUno;
+        justify-self: end;
+      }
+
+      #porfolioMainDos {
+        grid-area: porfolioMainDos;
+      }
+  }
+
+  #contactMainUno {
+    margin: 10px;
 }
 
-
+#contactMainDos {
+    margin: 10px;
+    padding: 8px;
+    border: 5px solid black;
+    width: fit-content;
+    
+}
+  

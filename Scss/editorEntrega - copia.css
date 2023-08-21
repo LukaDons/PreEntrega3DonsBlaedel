@@ -3,12 +3,9 @@ body {
   background-color: rgba(128, 128, 128, 0.925);
   height: 98vh;
   margin: 0;
-  padding: 0;
   width: 100vw;
   overflow-x: hidden;
   position: relative;
-  min-height: 100vh;
-
 }
 
 a {
@@ -282,11 +279,9 @@ header {
   grid-area: porfolioMain;
   height: 72.6vh;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 0.2fr 1fr;
-  grid-template-areas: 
-  "porfolioMainDos porfolioMainDos porfolioMainDos" 
-  "porfolioMainUno porfolioMainUno porfolioMainUno";
+  grid-template-columns: 3fr 1, 5fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas: "porfolioMainUno porfolioMainDos" "porfolioMainUno porfolioMainDos";
 }
 
 #porfolioMainUno {
@@ -304,9 +299,8 @@ header {
   height: 600px;
 }
 
-#porfolioFooter {
-  grid-area: porfolioFooter;
-  align-content: end;
+#skillsFooter {
+  grid-area: skillsFooter;
 }
 
 footer {
@@ -369,6 +363,5 @@ footer {
     grid-template-areas: "footer footerDos";
   }
 }
-
 
 /*# sourceMappingURL=editorEntrega%20-%20copia.css.map */

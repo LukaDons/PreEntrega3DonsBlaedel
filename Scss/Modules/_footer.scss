@@ -1,15 +1,15 @@
 footer {
     display: grid;
-    background-color: rgba(68, 66, 66, 0.925);
+    background-color: $c-secundario;
     height: 200px;
     width: 100vw;
-   
-
     bottom: 0;
+    position: absolute;
     grid-template-columns: 2fr 1fr 2fr;
-    grid-template-rows: 1,5fr 1fr;
-    grid-template-areas: "footerUno footerDos footerTres"
-    "footerUno footerCuatro footerTres";
+    grid-template-rows: 1.5fr 1fr;
+    grid-template-areas:
+     "footerUno footerDos footerTres"
+    "footerCuatro footerCuatro footerCuatro";
     
     #footerUno {
         grid-area: footerUno;
@@ -43,6 +43,7 @@ footer {
 #indexFooter {
     grid-area: indexFooter;
     display: grid;
+    height: 250px;
 }
 
 
@@ -53,4 +54,8 @@ footer {
 #serviciosFooter {
     grid-area: serviciosFooter;
 }
+
+#porfolioFooter {
+    grid-area: porfolioFooter;
+  }
 

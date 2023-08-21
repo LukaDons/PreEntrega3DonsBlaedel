@@ -31,6 +31,51 @@ text-align: center;
        }
 }
 
+@mixin footer {
+    display: grid;
+    height: 200px;
+    width: 100vw;
+    background-color: rgba(68, 66, 66, 0.925);
+   
+
+    bottom: 0;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1,5fr 1fr;
+    grid-template-areas: "footerUno footerDos footerTres"
+    "footerUno footerCuatro footerTres";
+
+    #footerUno {
+        grid-area: footerUno;
+        justify-self: right;
+        align-self: center;
+        padding: 5px;
+    }
+    
+    #footerDos {
+        grid-area: footerDos;
+        justify-self: center;
+        align-self: center;
+        padding: 5px;
+    }
+    
+    #footerTres {
+        grid-area: footerTres;
+        justify-self: left;
+        align-self: center;
+        padding: 5px;
+    }
+    
+    #footerCuatro {
+        grid-area: footerCuatro;
+        align-self: center;
+        justify-self: center;
+        padding: 5px;
+    }
+    
+}
+
+
+
 @mixin flexbox(){
    display: flex;
    flex-direction: row;

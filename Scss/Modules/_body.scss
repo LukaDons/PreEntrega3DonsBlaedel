@@ -1,13 +1,13 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: $tam-fuente;
-    background-color: rgba(128, 128, 128, 0.925);
-    height: 98vh;
+    background-color: $c-principal;
+    height: 100vh;
     margin: 0;
     width: 100vw;
     overflow-x: hidden;
     position: relative;
-    min-height: 98vh;
+    min-height: 100vh;
 
     a {
         text-decoration: none;
@@ -49,3 +49,24 @@ body {
     "skillsMain skillsMain skillsMain"
     "skillsFooter skillsFooter skillsFooter";
 }
+
+#serviciosBody {
+    display: grid;
+    width: 98vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 0, 7fr;
+    grid-template-areas:
+     "serviciosHeader serviciosHeader"
+      "serviciosMain serviciosMain" 
+      "serviciosFooter serviciosFooter";
+  }
+
+  #porfolioBody {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 0.5fr 3fr 0.7fr;
+    grid-template-areas: 
+    "porfolioHeader porfolioHeader porfolioHeader"
+     "porfolioMain porfolioMain porfolioMain" 
+     "porfolioFooter porfolioFooter porfolioFooter";
+  }
