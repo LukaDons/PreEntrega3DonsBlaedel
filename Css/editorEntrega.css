@@ -50,25 +50,20 @@ main {
   margin: 0;
   padding: 5px;
 }
-
 main section {
   width: 50%;
 }
-
 main section article h1 {
-  font-size: 2rem;
+  font-size: 1rem;
   color: rgb(0, 0, 0);
 }
-
 main section article p {
   line-height: 10px;
   font-size: 1.5rem;
 }
-
 main aside {
   background-color: rgba(68, 66, 66, 0.925);
 }
-
 main aside p {
   font-size: 3rem;
 }
@@ -84,7 +79,6 @@ main aside p {
   grid-template-rows: 1fr 3fr 1fr;
   grid-template-areas: "indexMainUno indexMainUno indexMainUno" "indexMainUno indexMainUno indexMainUno" "indexMainUno indexMainUno indexMainUno";
 }
-
 #indexMain #indexMainUno {
   grid-area: indexMainUno;
   justify-self: center;
@@ -94,7 +88,6 @@ main aside p {
   background-position: left;
   padding: 200px;
 }
-
 #indexMain #indexMainDos {
   grid-area: indexMainDos;
 }
@@ -107,12 +100,10 @@ main aside p {
   grid-template-rows: 1fr 3fr 1fr;
   grid-template-areas: "skillsMainUno skillsMainDos" "skillsMainUno skillsMainDos";
 }
-
 #skillsMain #skillsMainUno {
   grid-area: skillsMainUno;
   padding: 10px;
 }
-
 #skillsMain #skillsMainUno #unic {
   background-color: black;
   cursor: pointer;
@@ -124,7 +115,6 @@ main aside p {
   position: relative;
   border-radius: 12px;
 }
-
 #skillsMain #skillsMainUno #unic ::before {
   content: "";
   position: absolute;
@@ -139,12 +129,10 @@ main aside p {
   filter: blur(8px);
   animation: glowing 20s linear infinite;
 }
-
 #skillsMain #skillsMainDos {
   grid-area: skillsMainDos;
   padding: 30px;
 }
-
 #skillsMain #skillsMainDos #skillsMainDos_img {
   width: 600px;
   height: 600px;
@@ -158,18 +146,15 @@ main aside p {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "serviciosMainUno serviciosMainUno" "serviciosMainDos serviciosMainDos";
 }
-
 #serviciosMain .contact-iconos {
   width: 70px;
   height: 80px;
 }
-
 #serviciosMain #serviciosMainUno {
   grid-area: serviciosMainUno;
   padding: 10px;
   margin: 50px;
 }
-
 #serviciosMain #serviciosMainDos {
   grid-area: serviciosMainDos;
   margin: 50px;
@@ -183,12 +168,9 @@ main aside p {
   grid-template-rows: 0.5fr 1fr;
   grid-template-areas: "porfolioMainDos porfolioMainUno porfolioMainDos" "porfolioMainDos porfolioMainUno porfolioMainDos";
 }
-
 #porfolioMain #porfolioMainUno {
   grid-area: porfolioMainUno;
-  justify-self: end;
 }
-
 #porfolioMain #porfolioMainDos {
   grid-area: porfolioMainDos;
 }
@@ -210,33 +192,28 @@ footer {
   height: 200px;
   width: 100vw;
   bottom: 0;
-  position: absolute;
   grid-template-columns: 2fr 1fr 2fr;
   grid-template-rows: 1.5fr 1fr;
   grid-template-areas: "footerUno footerDos footerTres" "footerCuatro footerCuatro footerCuatro";
 }
-
 footer #footerUno {
   grid-area: footerUno;
   justify-self: right;
   align-self: center;
   padding: 5px;
 }
-
 footer #footerDos {
   grid-area: footerDos;
   justify-self: center;
   align-self: center;
   padding: 5px;
 }
-
 footer #footerTres {
   grid-area: footerTres;
   justify-self: left;
   align-self: center;
   padding: 5px;
 }
-
 footer #footerCuatro {
   grid-area: footerCuatro;
   align-self: center;
@@ -273,23 +250,19 @@ body {
   position: relative;
   min-height: 100vh;
 }
-
 body a {
   text-decoration: none;
   color: black;
 }
-
 body nav a {
   font-weight: 600px;
   padding-right: 10px;
   font-size: 23px;
   text-decoration: underline;
 }
-
 body nav a:hover {
   color: aliceblue;
 }
-
 body a {
   text-decoration: none;
   color: black;
@@ -329,29 +302,23 @@ body a {
   padding: 7px;
   background-color: rgba(128, 128, 128, 0.925);
 }
-
 #headerServicios nav {
   width: 100px;
 }
-
 #headerServicios nav ul {
   list-style-type: none;
   text-align: center;
   color: rgba(128, 128, 128, 0.925);
 }
-
 #headerServicios nav ul li {
   list-style-type: none;
 }
-
 #headerServicios nav ul li:hover {
   color: rgba(68, 66, 66, 0.925);
 }
-
 #headerServicios nav ul li a {
   text-decoration: none;
 }
-
 #headerServicios nav ul li a:hover {
   color: rgba(128, 128, 128, 0.925);
 }
@@ -372,11 +339,9 @@ header {
   grid-template-areas: "indexHeaderUno indexHeaderDos" "indexHeaderUno indexHeaderDos";
   height: 100px;
 }
-
 #indexHeader #indexHeaderUno {
   grid-area: indexHeaderUno;
 }
-
 #indexHeader #indexHeaderDos {
   grid-area: indexHeaderDos;
   justify-self: end;
@@ -391,11 +356,9 @@ header {
   grid-template-areas: "skillsHeaderUno skillsHeaderDos" "skillsHeaderUno skillsHeaderDos";
   height: 100px;
 }
-
 #skillsHeader #skillsHeaderUno {
   grid-area: skillsHeaderUno;
 }
-
 #skillsHeader #skillsHeaderDos {
   grid-area: skillsHeaderDos;
   justify-self: end;
@@ -410,11 +373,9 @@ header {
   grid-template-areas: "serviciosHeaderUno serviciosHeaderDos" "serviciosHeaderUno serviciosHeaderDos";
   height: 100px;
 }
-
 #serviciosHeader #serviciosHeaderUno {
   grid-area: serviciosHeaderUno;
 }
-
 #serviciosHeader #serviciosHeaderDos {
   grid-area: serviciosHeaderDos;
   justify-self: end;
@@ -429,11 +390,9 @@ header {
   grid-template-areas: "porfolioHeaderUno porfolioHeaderDos" "porfolioHeaderUno porfolioHeaderDos";
   height: 100px;
 }
-
 #porfolioHeader #porfolioHeaderUno {
   grid-area: porfolioHeaderUno;
 }
-
 #porfolioHeader #porfolioHeaderDos {
   grid-area: porfolioHeaderDos;
   justify-self: end;
@@ -462,7 +421,5 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
-
 
 /*# sourceMappingURL=editorEntrega.css.map */
