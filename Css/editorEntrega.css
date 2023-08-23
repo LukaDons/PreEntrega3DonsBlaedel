@@ -14,6 +14,14 @@
   height: 80px;
 }
 
+.Porfo {
+  background-color: darkgray;
+  width: 300px;
+  height: 125px;
+  margin: 50px;
+  padding: 50px;
+}
+
 .btn--aceptar {
   background-color: green;
 }
@@ -41,7 +49,6 @@
 main {
   margin: 0;
   padding: 5px;
-  background-color: red;
 }
 
 main section {
@@ -50,7 +57,7 @@ main section {
 
 main section article h1 {
   font-size: 2rem;
-  color: gold;
+  color: rgb(0, 0, 0);
 }
 
 main section article p {
@@ -59,7 +66,7 @@ main section article p {
 }
 
 main aside {
-  background-color: red;
+  background-color: rgba(68, 66, 66, 0.925);
 }
 
 main aside p {
@@ -135,6 +142,12 @@ main aside p {
 
 #skillsMain #skillsMainDos {
   grid-area: skillsMainDos;
+  padding: 30px;
+}
+
+#skillsMain #skillsMainDos #skillsMainDos_img {
+  width: 600px;
+  height: 600px;
 }
 
 #serviciosMain {
@@ -154,6 +167,7 @@ main aside p {
 #serviciosMain #serviciosMainUno {
   grid-area: serviciosMainUno;
   padding: 10px;
+  margin: 50px;
 }
 
 #serviciosMain #serviciosMainDos {
@@ -161,17 +175,33 @@ main aside p {
   margin: 50px;
 }
 
-#serviciosMain #skillsMainDos_img {
-  width: 600px;
-  height: 600px;
+#porfolioMain {
+  grid-area: porfolioMain;
+  height: 72.6vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  grid-template-areas: "porfolioMainDos porfolioMainUno porfolioMainDos" "porfolioMainDos porfolioMainUno porfolioMainDos";
 }
 
-.Porfo {
-  background-color: darkgray;
-  width: 300px;
-  height: 125px;
-  margin: 50px;
-  padding: 50px;
+#porfolioMain #porfolioMainUno {
+  grid-area: porfolioMainUno;
+  justify-self: end;
+}
+
+#porfolioMain #porfolioMainDos {
+  grid-area: porfolioMainDos;
+}
+
+#contactMainUno {
+  margin: 10px;
+}
+
+#contactMainDos {
+  margin: 10px;
+  padding: 8px;
+  border: 5px solid black;
+  width: fit-content;
 }
 
 footer {
@@ -180,9 +210,10 @@ footer {
   height: 200px;
   width: 100vw;
   bottom: 0;
+  position: absolute;
   grid-template-columns: 2fr 1fr 2fr;
-  grid-template-rows: 1, 5fr 1fr;
-  grid-template-areas: "footerUno footerDos footerTres" "footerUno footerCuatro footerTres";
+  grid-template-rows: 1.5fr 1fr;
+  grid-template-areas: "footerUno footerDos footerTres" "footerCuatro footerCuatro footerCuatro";
 }
 
 footer #footerUno {
@@ -216,6 +247,7 @@ footer #footerCuatro {
 #indexFooter {
   grid-area: indexFooter;
   display: grid;
+  height: 250px;
 }
 
 #skillsFooter {
@@ -226,16 +258,20 @@ footer #footerCuatro {
   grid-area: serviciosFooter;
 }
 
+#porfolioFooter {
+  grid-area: porfolioFooter;
+}
+
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   background-color: rgba(128, 128, 128, 0.925);
-  height: 98vh;
+  height: 100vh;
   margin: 0;
   width: 100vw;
   overflow-x: hidden;
   position: relative;
-  min-height: 98vh;
+  min-height: 100vh;
 }
 
 body a {
@@ -273,10 +309,25 @@ body a {
   grid-template-areas: "skillsHeader skillsHeader skillsHeader" "skillsMain skillsMain skillsMain" "skillsFooter skillsFooter skillsFooter";
 }
 
+#serviciosBody {
+  display: grid;
+  width: 98vw;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3fr 0, 7fr;
+  grid-template-areas: "serviciosHeader serviciosHeader" "serviciosMain serviciosMain" "serviciosFooter serviciosFooter";
+}
+
+#porfolioBody {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 0.5fr 3fr 0.7fr;
+  grid-template-areas: "porfolioHeader porfolioHeader porfolioHeader" "porfolioMain porfolioMain porfolioMain" "porfolioFooter porfolioFooter porfolioFooter";
+}
+
 #headerServicios {
   margin: 0;
   padding: 7px;
-  background-color: rgb(3, 88, 24);
+  background-color: rgba(128, 128, 128, 0.925);
 }
 
 #headerServicios nav {
@@ -286,7 +337,7 @@ body a {
 #headerServicios nav ul {
   list-style-type: none;
   text-align: center;
-  color: rgb(3, 88, 24);
+  color: rgba(128, 128, 128, 0.925);
 }
 
 #headerServicios nav ul li {
@@ -294,7 +345,7 @@ body a {
 }
 
 #headerServicios nav ul li:hover {
-  color: red;
+  color: rgba(68, 66, 66, 0.925);
 }
 
 #headerServicios nav ul li a {
@@ -302,7 +353,7 @@ body a {
 }
 
 #headerServicios nav ul li a:hover {
-  color: rgb(3, 88, 24);
+  color: rgba(128, 128, 128, 0.925);
 }
 
 header {
@@ -345,12 +396,18 @@ header {
   grid-area: skillsHeaderUno;
 }
 
+#skillsHeader #skillsHeaderDos {
+  grid-area: skillsHeaderDos;
+  justify-self: end;
+  padding: 25px;
+}
+
 #serviciosHeader {
   grid-area: serviciosHeader;
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "serviciosHeaderUno serviciosHeaderDos";
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "serviciosHeaderUno serviciosHeaderDos" "serviciosHeaderUno serviciosHeaderDos";
   height: 100px;
 }
 
@@ -361,12 +418,29 @@ header {
 #serviciosHeader #serviciosHeaderDos {
   grid-area: serviciosHeaderDos;
   justify-self: end;
-  margin-right: 18px;
-  margin-bottom: 10px;
-  padding: 30px;
+  padding: 25px;
 }
 
-@media (max-width: 320px) {
+#porfolioHeader {
+  grid-area: porfolioHeader;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "porfolioHeaderUno porfolioHeaderDos" "porfolioHeaderUno porfolioHeaderDos";
+  height: 100px;
+}
+
+#porfolioHeader #porfolioHeaderUno {
+  grid-area: porfolioHeaderUno;
+}
+
+#porfolioHeader #porfolioHeaderDos {
+  grid-area: porfolioHeaderDos;
+  justify-self: end;
+  padding: 25px;
+}
+
+@media (min-width: 300px) and (max-width: 576px) {
   #serviciosMain {
     grid-template-columns: 2fr 2fr;
     grid-template-rows: 1fr;

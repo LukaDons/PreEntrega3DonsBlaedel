@@ -5,12 +5,12 @@ main {
         width: 50%;
         article {
             h1 {
-                font-size: 2rem;
+                font-size: 1rem;
                 color: map-get($map: $paleta_colores, $key: dorado);
             }
             p {
                 line-height: 10px;
-                font-size: 1.5rem;
+                font-size: $tam-fuente;
             }
         }
     }
