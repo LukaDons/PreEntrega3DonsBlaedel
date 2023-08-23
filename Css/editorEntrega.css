@@ -160,7 +160,7 @@ main aside p {
   margin: 50px;
 }
 
-#porfolioMaiin {
+#porfolioMain {
   grid-area: porfolioMain;
   height: 72.6vh;
   display: grid;
@@ -168,11 +168,11 @@ main aside p {
   grid-template-rows: 0.5fr 1fr;
   grid-template-areas: "porfolioMainDos porfolioMainUno porfolioMainDos" "porfolioMainDos porfolioMainUno porfolioMainDos";
 }
-#porfolioMaiin #porfolioMainUno {
+#porfolioMain #porfolioMainUno {
   grid-area: porfolioMainUno;
   justify-self: end;
 }
-#porfolioMaiin #porfolioMainDos {
+#porfolioMain #porfolioMainDos {
   grid-area: porfolioMainDos;
 }
 
