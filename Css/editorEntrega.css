@@ -50,9 +50,6 @@ main {
   margin: 0;
   padding: 5px;
 }
-main section {
-  width: 50%;
-}
 main section article h1 {
   font-size: 1rem;
   color: rgb(0, 0, 0);
@@ -95,16 +92,27 @@ main aside p {
 #skillsMain {
   grid-area: skillsMain;
   height: 72.6vh;
+  padding-top: 60px;
   display: grid;
-  grid-template-columns: 3fr 1, 5fr;
-  grid-template-rows: 1fr 3fr 1fr;
-  grid-template-areas: "skillsMainUno skillsMainDos" "skillsMainUno skillsMainDos";
+  grid-template-columns: 1.5fr 2.5fr 1.2fr;
+  grid-template-rows: 3fr 0.2fr;
+  grid-template-areas: "skillsMainUno skillsMainDos skillsMainTres" "skillsMainUno skillsMainDos skillsMainTres";
 }
 #skillsMain #skillsMainUno {
   grid-area: skillsMainUno;
+  padding: 30px;
+}
+#skillsMain #skillsMainUno #programador {
+  padding: 50px;
+  margin: 10px;
+  height: 500px;
+  width: 450px;
+}
+#skillsMain #skillsMainDos {
+  grid-area: skillsMainDos;
   padding: 10px;
 }
-#skillsMain #skillsMainUno #unic {
+#skillsMain #skillsMainDos #unic {
   background-color: black;
   cursor: pointer;
   border: none;
@@ -115,7 +123,7 @@ main aside p {
   position: relative;
   border-radius: 12px;
 }
-#skillsMain #skillsMainUno #unic ::before {
+#skillsMain #skillsMainDos #unic ::before {
   content: "";
   position: absolute;
   top: 0;
@@ -129,22 +137,25 @@ main aside p {
   filter: blur(8px);
   animation: glowing 20s linear infinite;
 }
-#skillsMain #skillsMainDos {
-  grid-area: skillsMainDos;
-  padding: 30px;
+#skillsMain #skillsMainTres {
+  grid-area: skillsMainTres;
+  padding: 20px;
+  background-color: #636363;
+  border-radius: 20px;
 }
-#skillsMain #skillsMainDos #skillsMainDos_img {
-  width: 600px;
-  height: 600px;
+#skillsMain #skillsMainTres .imgSkills {
+  width: 85px;
+  height: 85px;
 }
 
 #serviciosMain {
   height: 100vh;
   grid-area: serviciosMain;
+  justify-content: center;
   display: grid;
   grid-template-columns: 2fr 2fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "serviciosMainUno serviciosMainUno" "serviciosMainDos serviciosMainDos";
+  grid-template-rows: 2fr 2fr 1.5fr;
+  grid-template-areas: "serviciosMainUno serviciosMainDos" "serviciosMainTres serviciosMainCuatro " "serviciosMainCinco serviciosMainCinco";
 }
 #serviciosMain .contact-iconos {
   width: 70px;
@@ -157,7 +168,37 @@ main aside p {
 }
 #serviciosMain #serviciosMainDos {
   grid-area: serviciosMainDos;
+  padding: 10px;
+  padding-top: 80px;
   margin: 50px;
+}
+#serviciosMain #serviciosMainTres {
+  grid-area: serviciosMainTres;
+  padding: 10px;
+  margin: 50px;
+}
+#serviciosMain #serviciosMainCuatro {
+  grid-area: serviciosMainCuatro;
+  padding: 10px;
+  margin: 50px;
+}
+#serviciosMain #serviciosMainCinco {
+  grid-area: serviciosMainCinco;
+  padding: 10px;
+  margin: 50px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding: 5px;
+  justify-self: center;
+}
+#serviciosMain #serviciosMainCinco .imgClientes {
+  height: 110px;
+  width: 110px;
+  border-radius: 20px;
+  padding: 5px;
 }
 
 #porfolioMain {
@@ -170,20 +211,77 @@ main aside p {
 }
 #porfolioMain #porfolioMainUno {
   grid-area: porfolioMainUno;
+  range: auto;
+  background-color: #636363;
+  border-radius: 20px;
+}
+#porfolioMain #porfolioMainUno .contenedor_proyecto {
+  padding-top: 25px;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#porfolioMain #porfolioMainUno .card {
+  border: none;
+  margin-bottom: 50px;
+  white-space: nowrap;
+}
+#porfolioMain #porfolioMainUno .card-title {
+  font-weight: bold;
+}
+#porfolioMain #porfolioMainUno .card-text {
+  margin-top: -10px;
+}
+#porfolioMain #porfolioMainUno .card-body {
+  margin-top: 5px;
+  height: 75px;
+  text-align: center;
+  justify-content: center;
+  color: black;
+  border-radius: 2px;
+}
+#porfolioMain #porfolioMainUno .btn-primary {
+  border: none;
+  font-weight: bold;
+  width: 100%;
+}
+#porfolioMain #porfolioMainUno .btn-primary:hover {
+  background-color: #636363 !important;
+  transition: background-color 0.2s ease-in-out;
 }
 #porfolioMain #porfolioMainDos {
   grid-area: porfolioMainDos;
 }
 
-#contactMainUno {
+#ContactMain {
+  grid-area: porfolioMain;
+  height: 72.6vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  grid-template-rows: 0.5fr 1fr;
+  grid-template-areas: "contactMainUno contactMainDos contactMainTres" "contactMainUno contactMainDos contactMainTres";
+}
+#ContactMain #contactMainUno {
+  grid-area: contactMainUno;
   margin: 10px;
 }
-
-#contactMainDos {
-  margin: 10px;
-  padding: 8px;
+#ContactMain #contactMainUno #contactBorde {
   border: 5px solid black;
   width: fit-content;
+  padding: 8px;
+}
+#ContactMain #contactMainDos {
+  grid-area: contactMainDos;
+  justify-self: center;
+  align-self: center;
+}
+#ContactMain #contactMainTres {
+  grid-area: contactMainTres;
+  justify-self: end;
+  padding-right: 20px;
+  align-self: center;
 }
 
 footer {
@@ -240,7 +338,7 @@ footer #footerCuatro {
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 1.5rem;
   background-color: rgba(128, 128, 128, 0.925);
   height: 100vh;

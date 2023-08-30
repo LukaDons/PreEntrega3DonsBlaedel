@@ -2,7 +2,6 @@ main {
     margin: 0;
     padding: 5px;
     section {
-        width: 50%;
         article {
             h1 {
                 font-size: 1rem;
@@ -58,15 +57,29 @@ main {
 #skillsMain {
     grid-area: skillsMain;
     height: 72.6vh;
+    padding-top: 60px;
     display: grid;
-    grid-template-columns: 3fr 1,5fr;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 1.5fr 2.5fr 1.2fr;
+    grid-template-rows: 3fr 0.2fr;
     grid-template-areas: 
-    "skillsMainUno skillsMainDos"
-    "skillsMainUno skillsMainDos";
+    "skillsMainUno skillsMainDos skillsMainTres"
+    "skillsMainUno skillsMainDos skillsMainTres";
 
     #skillsMainUno {
         grid-area: skillsMainUno;
+        padding: 30px;
+
+        #programador {
+            padding: 50px;
+            margin: 10px;
+            height: 500px;
+            width: 450px;
+        
+        }
+    }
+
+    #skillsMainDos {
+        grid-area: skillsMainDos;
         padding: 10px;
 
         #unic   {
@@ -101,13 +114,17 @@ main {
        
     }
     
-    #skillsMainDos {
-        grid-area: skillsMainDos;
-        padding: 30px;
+    #skillsMainTres {
+        grid-area: skillsMainTres;
+        padding: 20px;
+        background-color: #636363;
+            border-radius: 20px;
+            height: fit-content;
+            width: fit-content;
 
-        #skillsMainDos_img {
-            width: 600px;
-            height: 600px;
+        .imgSkills {
+            width: 85px;
+            height: 85px;
          }
     }
 }
@@ -115,12 +132,14 @@ main {
 #serviciosMain {
     height: 100vh;
     grid-area: serviciosMain;
+    justify-content: center;
     display: grid;
     grid-template-columns: 2fr 2fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 2fr 2fr 1.5fr;
     grid-template-areas: 
-    "serviciosMainUno serviciosMainUno"
-    "serviciosMainDos serviciosMainDos";
+    "serviciosMainUno serviciosMainDos"
+    "serviciosMainTres serviciosMainCuatro "
+    "serviciosMainCinco serviciosMainCinco";
 
     .contact-iconos {
         width: 70px;
@@ -136,7 +155,45 @@ main {
     
     #serviciosMainDos {
         grid-area: serviciosMainDos;
+        padding: 10px;
+        padding-top: 80px;
         margin: 50px;
+    }
+
+    #serviciosMainTres {
+        grid-area: serviciosMainTres;
+        padding: 10px;
+        margin: 50px;
+
+    }
+
+    #serviciosMainCuatro {
+        grid-area: serviciosMainCuatro;
+        padding: 10px;
+        margin: 50px;
+    }
+
+    #serviciosMainCinco {
+        grid-area: serviciosMainCinco;
+        padding: 10px;
+        margin: 50px;
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 20px;
+       text-align: center;
+       margin-top: 3rem;
+       margin-bottom: 2rem;
+       padding: 5px;
+       justify-self: center;
+        
+        
+       
+
+       .imgClientes {
+        height: 110px;
+        width: 110px;
+        border-radius: 20px;
+        padding: 5px;
+       }
     }
 
 
@@ -155,6 +212,46 @@ main {
 
     #porfolioMainUno {
         grid-area: porfolioMainUno;
+        range: auto;
+        background-color: #636363;
+            border-radius: 20px;
+
+        .contenedor_proyecto {
+            padding-top: 25px;
+            padding-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+          }
+          .card {
+            border: none;
+            margin-bottom: 50px;
+            white-space: nowrap;
+          }
+          .card-title {
+            font-weight: bold;
+          }
+          .card-text {
+            margin-top: -10px;
+          }
+          .card-body {
+            margin-top: 5px;
+            height: 75px;
+            text-align: center;
+            justify-content: center;
+            color: black;
+            border-radius: 2px;
+          }
+          .btn-primary {
+            border: none;
+            font-weight: bold;
+            width: 100%;
+          }
+          .btn-primary:hover {
+            background-color: #636363 !important;
+            transition: background-color 0.2s ease-in-out;
+          }
       }
 
       #porfolioMainDos {
@@ -162,15 +259,38 @@ main {
       }
   }
 
-  #contactMainUno {
-    margin: 10px;
-}
+  #ContactMain {
+    grid-area: porfolioMain;
+    height: 72.6vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-areas: 
+    "contactMainUno contactMainDos contactMainTres" 
+    "contactMainUno contactMainDos contactMainTres";
 
-#contactMainDos {
-    margin: 10px;
-    padding: 8px;
-    border: 5px solid black;
+    #contactMainUno {
+        grid-area: contactMainUno;
+        margin: 10px;
+
+    #contactBorde{
+        border: 5px solid black;
     width: fit-content;
-    
-}
+    padding: 8px;
+    }
+      }
+
+      #contactMainDos {
+        grid-area: contactMainDos;
+        justify-self: center;
+        align-self: center;
+      }
+
+      #contactMainTres {
+        grid-area: contactMainTres;
+        justify-self: end;
+        padding-right: 20px;
+        align-self: center;
+      } 
+  }
   
