@@ -142,6 +142,8 @@ main aside p {
   padding: 20px;
   background-color: #636363;
   border-radius: 20px;
+  height: fit-content;
+  width: fit-content;
 }
 #skillsMain #skillsMainTres .imgSkills {
   width: 85px;
