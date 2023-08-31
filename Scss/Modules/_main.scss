@@ -131,6 +131,10 @@ main {
 
         #skillsIcono {
             gap: 10px;
+
+            #coder {
+                color: $paleta_colores-coder;
+            }
         }
         
        
@@ -170,6 +174,8 @@ main {
         height: fit-content;
         border-radius: 20px;
         width: fit-content;
+        padding: 5px;
+        padding-right: 10px;
     }
 
     .contact-iconos {
@@ -193,7 +199,7 @@ main {
     #serviciosMainDos {
         grid-area: serviciosMainDos;
         padding: 10px;
-        padding-top: 100px;
+        padding-top: 130px;
         margin: 50px;
     }
 
@@ -252,6 +258,7 @@ main {
         range: auto;
         background-color: #636363;
             border-radius: 20px;
+            padding-bottom: 40px;
 
         .contenedor_proyecto {
             padding-top: 25px;
