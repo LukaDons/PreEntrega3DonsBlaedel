@@ -78,6 +78,10 @@ main {
             margin: 10px;
             height: 500px;
             width: 450px;
+            background-color: #636363;
+            border-radius: 20px;
+            height: fit-content;
+            width: fit-content;
         
         }
     }
@@ -96,6 +100,7 @@ main {
             font-weight: bold;
             position: relative;
             border-radius: 12px;
+            margin-top: 30px;
         }
         
         #unic ::before {
@@ -114,6 +119,19 @@ main {
         animation: glowing 20s linear infinite;
         
         }
+
+        #skillsCertificacion {
+            display: flex;
+            background-color: #636363;
+            border-radius: 20px;
+            height: fit-content;
+            width: fit-content;
+            padding: 25px;
+        }
+
+        #skillsIcono {
+            gap: 10px;
+        }
         
        
     }
@@ -126,6 +144,7 @@ main {
             border-radius: 20px;
             height: fit-content;
             width: fit-content;
+            padding-left: 45px;
 
         .imgSkills {
             width: 85px;
@@ -147,12 +166,22 @@ main {
 
     .serviciosIconos {
         display: flex;
+        background-color: rgba(128, 128, 128, 0.925);
+        height: fit-content;
+        border-radius: 20px;
+        width: fit-content;
     }
 
     .contact-iconos {
         width: 70px;
         height: 80px;
         
+    }
+
+    .serviciosTexto {
+        background-color: $c-secundario;
+        border-radius: 20px;
+        padding: 5px;
     }
 
     #serviciosMainUno {

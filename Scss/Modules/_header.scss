@@ -23,6 +23,12 @@ header {
     "indexHeaderUno indexHeaderDos";
     height: 100px;
 
+    .abrir-menu,
+    .cerrar-menu {
+        display: none;
+
+    }
+
     #indexHeaderUno {
         grid-area: indexHeaderUno;
     }
@@ -31,6 +37,16 @@ header {
         grid-area: indexHeaderDos;
         justify-self: end;
         padding: 25px;
+
+        .nav {
+            list-style: none;
+        }
+
+        .nav-list {
+            list-style: none;
+            
+
+        }
     
     }
 }

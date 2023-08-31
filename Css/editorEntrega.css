@@ -110,6 +110,10 @@ main aside p {
   margin: 10px;
   height: 500px;
   width: 450px;
+  background-color: #636363;
+  border-radius: 20px;
+  height: fit-content;
+  width: fit-content;
 }
 #skillsMain #skillsMainDos {
   grid-area: skillsMainDos;
@@ -125,6 +129,7 @@ main aside p {
   font-weight: bold;
   position: relative;
   border-radius: 12px;
+  margin-top: 30px;
 }
 #skillsMain #skillsMainDos #unic ::before {
   content: "";
@@ -140,6 +145,17 @@ main aside p {
   filter: blur(8px);
   animation: glowing 20s linear infinite;
 }
+#skillsMain #skillsMainDos #skillsCertificacion {
+  display: flex;
+  background-color: #636363;
+  border-radius: 20px;
+  height: fit-content;
+  width: fit-content;
+  padding: 25px;
+}
+#skillsMain #skillsMainDos #skillsIcono {
+  gap: 10px;
+}
 #skillsMain #skillsMainTres {
   grid-area: skillsMainTres;
   padding: 20px;
@@ -148,6 +164,7 @@ main aside p {
   border-radius: 20px;
   height: fit-content;
   width: fit-content;
+  padding-left: 45px;
 }
 #skillsMain #skillsMainTres .imgSkills {
   width: 85px;
@@ -164,11 +181,19 @@ main aside p {
 }
 #serviciosMain .serviciosIconos {
   display: flex;
-  justify-content: space-between;
+  background-color: rgba(128, 128, 128, 0.925);
+  height: fit-content;
+  border-radius: 20px;
+  width: fit-content;
 }
 #serviciosMain .contact-iconos {
   width: 70px;
   height: 80px;
+}
+#serviciosMain .serviciosTexto {
+  background-color: rgba(68, 66, 66, 0.925);
+  border-radius: 20px;
+  padding: 5px;
 }
 #serviciosMain #serviciosMainUno {
   grid-area: serviciosMainUno;
@@ -368,7 +393,7 @@ footer #footerCuatro {
 }
 
 body {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: sans-serif;
   font-size: 1.5rem;
   background-color: rgba(128, 128, 128, 0.925);
   height: 100vh;
@@ -474,6 +499,10 @@ header {
   grid-template-areas: "indexHeaderUno indexHeaderDos" "indexHeaderUno indexHeaderDos";
   height: 100px;
 }
+#indexHeader .abrir-menu,
+#indexHeader .cerrar-menu {
+  display: none;
+}
 #indexHeader #indexHeaderUno {
   grid-area: indexHeaderUno;
 }
@@ -481,6 +510,12 @@ header {
   grid-area: indexHeaderDos;
   justify-self: end;
   padding: 25px;
+}
+#indexHeader #indexHeaderDos .nav {
+  list-style: none;
+}
+#indexHeader #indexHeaderDos .nav-list {
+  list-style: none;
 }
 
 #skillsHeader {
@@ -566,6 +601,46 @@ header {
     grid-area: footer;
     grid-template-columns: 0.6fr 0.4fr;
     grid-template-areas: "footer footerDos";
+  }
+}
+@media screen and (max-width: 737.98px) {
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .abrir-menu {
+    color: black;
+  }
+  .cerrar-menu {
+    color: rgb(255, 255, 255);
+  }
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(68, 66, 66, 0.925);
+    padding: 2rem;
+  }
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
   }
 }
 @media (min-width: 768px) and (max-width: 914px) {

@@ -27,22 +27,52 @@
     }
 }
 
-@media (min-width: 0px) and (max-width: 737.98px) {
-  #indexHeader {
-    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
-  <div class="bg-dark p-4">
-    <h5 class="text-body-emphasis h4">Collapsed content</h5>
-    <span class="text-body-secondary">Toggleable via the navbar brand.</span>
-  </div>
-</div>
-<nav class="navbar navbar-dark bg-dark">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>
-</nav>
+@media screen and (max-width: 737.98px) {
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
   }
+
+  .abrir-menu {
+    color: black;
+  }
+
+  .cerrar-menu {
+    color: rgb(255, 255, 255);
+  }
+
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(68, 66, 66, 0.925);
+    padding: 2rem;
+  }
+
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
+  }
+  
 }
 @media (min-width: 768px) and (max-width: 914px) {
     #indexImg {
