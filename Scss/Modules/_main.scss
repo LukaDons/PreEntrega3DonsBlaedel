@@ -244,8 +244,8 @@ main {
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 0.5fr 1fr;
     grid-template-areas: 
-    "porfolioMainDos porfolioMainUno porfolioMainDos" 
-    "porfolioMainDos porfolioMainUno porfolioMainDos";
+    "porfolioMainUno porfolioMainUno porfolioMainUno" 
+    "porfolioMainDos porfolioMainDos porfolioMainDos";
 
     #porfolioMainUno {
         grid-area: porfolioMainUno;
