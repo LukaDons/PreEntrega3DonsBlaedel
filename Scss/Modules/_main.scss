@@ -46,6 +46,10 @@ main {
         background-position: center bottom;
         background-position: left;
         padding: 200px;
+
+        #indexImg {
+            height: 300px;
+        }
         
     }
 
@@ -117,6 +121,7 @@ main {
     #skillsMainTres {
         grid-area: skillsMainTres;
         padding: 20px;
+        margin-top: 30px;
         background-color: #636363;
             border-radius: 20px;
             height: fit-content;
@@ -130,16 +135,19 @@ main {
 }
 
 #serviciosMain {
-    height: 100vh;
     grid-area: serviciosMain;
     justify-content: center;
     display: grid;
     grid-template-columns: 2fr 2fr;
-    grid-template-rows: 2fr 2fr 1.5fr;
+    grid-template-rows: 1fr 1fr 2fr;
     grid-template-areas: 
     "serviciosMainUno serviciosMainDos"
     "serviciosMainTres serviciosMainCuatro "
     "serviciosMainCinco serviciosMainCinco";
+
+    .serviciosIconos {
+        display: flex;
+    }
 
     .contact-iconos {
         width: 70px;
@@ -156,7 +164,7 @@ main {
     #serviciosMainDos {
         grid-area: serviciosMainDos;
         padding: 10px;
-        padding-top: 80px;
+        padding-top: 100px;
         margin: 50px;
     }
 
@@ -243,15 +251,34 @@ main {
             color: black;
             border-radius: 2px;
           }
-          .btn-primary {
+          #unic   {
+            background-color: black;
+            cursor: pointer;
             border: none;
+            padding: 16px 32px;
+            color: antiquewhite;
+            font-size: 24px;
             font-weight: bold;
+            position: relative;
+            border-radius: 12px;
+        }
+        
+        #unic ::before {
+            content:"";
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
             width: 100%;
-          }
-          .btn-primary:hover {
-            background-color: #636363 !important;
-            transition: background-color 0.2s ease-in-out;
-          }
+            height: 100%;
+            background: linear-gradient(45deg,
+            red,blue, deeppink, blue, red,blue, deeppink, blue);
+        background-size: 800%;
+        border-radius: 10px;
+        filter: blur(8px);
+        animation: glowing 20s linear infinite;
+        
+        }
       }
 
       #porfolioMainDos {
@@ -260,7 +287,7 @@ main {
   }
 
   #ContactMain {
-    grid-area: porfolioMain;
+    grid-area: contactMain;
     height: 72.6vh;
     display: grid;
     grid-template-columns: 2fr 1fr 1.5fr;

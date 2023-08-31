@@ -85,6 +85,9 @@ main aside p {
   background-position: left;
   padding: 200px;
 }
+#indexMain #indexMainUno #indexImg {
+  height: 300px;
+}
 #indexMain #indexMainDos {
   grid-area: indexMainDos;
 }
@@ -140,6 +143,7 @@ main aside p {
 #skillsMain #skillsMainTres {
   grid-area: skillsMainTres;
   padding: 20px;
+  margin-top: 30px;
   background-color: #636363;
   border-radius: 20px;
   height: fit-content;
@@ -151,13 +155,16 @@ main aside p {
 }
 
 #serviciosMain {
-  height: 100vh;
   grid-area: serviciosMain;
   justify-content: center;
   display: grid;
   grid-template-columns: 2fr 2fr;
-  grid-template-rows: 2fr 2fr 1.5fr;
+  grid-template-rows: 1fr 1fr 2fr;
   grid-template-areas: "serviciosMainUno serviciosMainDos" "serviciosMainTres serviciosMainCuatro " "serviciosMainCinco serviciosMainCinco";
+}
+#serviciosMain .serviciosIconos {
+  display: flex;
+  justify-content: space-between;
 }
 #serviciosMain .contact-iconos {
   width: 70px;
@@ -171,7 +178,7 @@ main aside p {
 #serviciosMain #serviciosMainDos {
   grid-area: serviciosMainDos;
   padding: 10px;
-  padding-top: 80px;
+  padding-top: 100px;
   margin: 50px;
 }
 #serviciosMain #serviciosMainTres {
@@ -244,21 +251,37 @@ main aside p {
   color: black;
   border-radius: 2px;
 }
-#porfolioMain #porfolioMainUno .btn-primary {
+#porfolioMain #porfolioMainUno #unic {
+  background-color: black;
+  cursor: pointer;
   border: none;
+  padding: 16px 32px;
+  color: antiquewhite;
+  font-size: 24px;
   font-weight: bold;
-  width: 100%;
+  position: relative;
+  border-radius: 12px;
 }
-#porfolioMain #porfolioMainUno .btn-primary:hover {
-  background-color: #636363 !important;
-  transition: background-color 0.2s ease-in-out;
+#porfolioMain #porfolioMainUno #unic ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+  background-size: 800%;
+  border-radius: 10px;
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
 }
 #porfolioMain #porfolioMainDos {
   grid-area: porfolioMainDos;
 }
 
 #ContactMain {
-  grid-area: porfolioMain;
+  grid-area: contactMain;
   height: 72.6vh;
   display: grid;
   grid-template-columns: 2fr 1fr 1.5fr;
@@ -291,6 +314,7 @@ footer {
   background-color: rgba(68, 66, 66, 0.925);
   height: 200px;
   width: 100vw;
+  padding-top: 30px;
   bottom: 0;
   grid-template-columns: 2fr 1fr 2fr;
   grid-template-rows: 1.5fr 1fr;
@@ -337,6 +361,10 @@ footer #footerCuatro {
 
 #porfolioFooter {
   grid-area: porfolioFooter;
+}
+
+#contactFooter {
+  grid-area: contactFooter;
 }
 
 body {
@@ -395,6 +423,13 @@ body a {
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 0.5fr 3fr 0.7fr;
   grid-template-areas: "porfolioHeader porfolioHeader porfolioHeader" "porfolioMain porfolioMain porfolioMain" "porfolioFooter porfolioFooter porfolioFooter";
+}
+
+#contactBody {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 0.5fr 3fr 0.7fr;
+  grid-template-areas: "contactHeader contactHeader contactHeader" "contactMain contactMain contactMain" "contactFooter contactFooter contactFooter";
 }
 
 #headerServicios {
@@ -499,6 +534,23 @@ header {
   padding: 25px;
 }
 
+#contactHeader {
+  grid-area: contactHeader;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "contactHeaderUno contactHeaderDos" "contactHeaderUno contactHeaderDos";
+  height: 100px;
+}
+#contactHeader #contactHeaderUno {
+  grid-area: contactHeaderUno;
+}
+#contactHeader #contactHeaderDos {
+  grid-area: contactHeaderDos;
+  justify-self: end;
+  padding: 25px;
+}
+
 @media (min-width: 300px) and (max-width: 576px) {
   #serviciosMain {
     grid-template-columns: 2fr 2fr;
@@ -514,6 +566,57 @@ header {
     grid-area: footer;
     grid-template-columns: 0.6fr 0.4fr;
     grid-template-areas: "footer footerDos";
+  }
+}
+@media (min-width: 768px) and (max-width: 914px) {
+  #indexImg {
+    height: 350px;
+  }
+  .nombres_index {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 0px) and (max-width: 575px) {
+  .img_correo {
+    width: 300px;
+  }
+  .imagenes_sobre_mi {
+    margin-top: 15px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .imagenes_sobre_mi img {
+    width: 80px;
+    height: auto;
+  }
+  .contenedor_principal_index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .nombres_index {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor_img {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 55px;
+  }
+  .index_img {
+    width: 250px;
+  }
+  .centrar_carrusel img {
+    width: 350px;
+    height: auto;
   }
 }
 body {

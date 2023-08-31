@@ -101,3 +101,25 @@ header {
         padding: 25px;
       }
   }
+
+  #contactHeader {
+    grid-area: contactHeader;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "contactHeaderUno contactHeaderDos" 
+    "contactHeaderUno contactHeaderDos";
+    height: 100px;
+
+    #contactHeaderUno {
+        grid-area: contactHeaderUno;
+      }
+
+      #contactHeaderDos {
+        grid-area: contactHeaderDos;
+        justify-self: end;
+        padding: 25px;
+      }
+  }
+

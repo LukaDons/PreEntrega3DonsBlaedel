@@ -27,3 +27,73 @@
     }
 }
 
+@media (min-width: 0px) and (max-width: 737.98px) {
+  #indexHeader {
+    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+  <div class="bg-dark p-4">
+    <h5 class="text-body-emphasis h4">Collapsed content</h5>
+    <span class="text-body-secondary">Toggleable via the navbar brand.</span>
+  </div>
+</div>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+  }
+}
+@media (min-width: 768px) and (max-width: 914px) {
+    #indexImg {
+        height: 350px;
+    }
+    .nombres_index {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media (min-width: 0px) and (max-width: 575px) {
+    .img_correo {
+      width: 300px;
+    }
+    .imagenes_sobre_mi {
+      margin-top: 15px;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+    }
+    .imagenes_sobre_mi img {
+      width: 80px;
+      height: auto;
+    }
+    .contenedor_principal_index {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .nombres_index {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+    .contenedor_img {
+      width: 300px;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 55px;
+    }
+    .index_img {
+      width: 250px;
+    }
+    .centrar_carrusel img {
+      width: 350px;
+      height: auto;
+    }
+  }
+
