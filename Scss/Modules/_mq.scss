@@ -94,11 +94,12 @@
       height: 72.6vh;
       padding-top: 60px;
       display: grid;
-      grid-template-columns: 2fr 2.5fr ;
-      grid-template-rows: 3fr 1fr;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
       grid-template-areas: 
-      "skillsMainUno skillsMainDos"
-      "skillsMainTres skillsMainTres";
+      "skillsMainUno "
+      "skillsMainDos"
+      "skillsMainTres ";
   
       #skillsMainUno {
           grid-area: skillsMainUno;
