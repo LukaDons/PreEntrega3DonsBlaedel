@@ -327,11 +327,19 @@ main aside p {
   justify-self: center;
   align-self: center;
 }
+#ContactMain #contactMainDos .contactInfo {
+  margin: 0;
+}
 #ContactMain #contactMainTres {
   grid-area: contactMainTres;
   justify-self: end;
   padding-right: 20px;
   align-self: center;
+  display: flex;
+  background-color: rgba(128, 128, 128, 0.925);
+  height: fit-content;
+  border-radius: 20px;
+  width: fit-content;
 }
 
 footer {
@@ -454,7 +462,7 @@ body a {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 0.5fr 3fr 0.7fr;
-  grid-template-areas: "contactHeader contactHeader contactHeader" "contactMain contactMain contactMain";
+  grid-template-areas: "contactHeader contactHeader contactHeader" "contactMain contactMain contactMain" "contactFooter contactFooter contactFooter";
 }
 
 #headerServicios {
@@ -654,24 +662,83 @@ header {
   }
 }
 @media (min-width: 0px) and (max-width: 575px) {
-  .img_correo {
-    width: 300px;
-  }
-  .imagenes_sobre_mi {
-    margin-top: 15px;
+  #skillsMain {
+    grid-area: skillsMain;
+    height: 72.6vh;
+    padding-top: 60px;
     display: grid;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: 2fr 2.5fr;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas: "skillsMainUno skillsMainDos" "skillsMainTres skillsMainTres";
   }
-  .imagenes_sobre_mi img {
-    width: 80px;
-    height: auto;
+  #skillsMain #skillsMainUno {
+    grid-area: skillsMainUno;
+    padding: 30px;
   }
-  .contenedor_principal_index {
+  #skillsMain #skillsMainUno #programador {
+    padding: 30px;
+    margin: 10px;
+    height: 300px;
+    width: 250px;
+    background-color: #636363;
+    border-radius: 20px;
+    height: fit-content;
+    width: fit-content;
+  }
+  #skillsMain #skillsMainDos {
+    grid-area: skillsMainDos;
+    padding: 10px;
+  }
+  #skillsMain #skillsMainDos #unic {
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: antiquewhite;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+    margin-top: 30px;
+  }
+  #skillsMain #skillsMainDos #unic ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+  }
+  #skillsMain #skillsMainDos #skillsCertificacion {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    background-color: #636363;
+    border-radius: 20px;
+    height: fit-content;
+    width: fit-content;
+    padding: 15px;
+  }
+  #skillsMain #skillsMainDos #skillsIcono {
+    gap: 10px;
+  }
+  #skillsMain #skillsMainTres {
+    grid-area: skillsMainTres;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #636363;
+    border-radius: 20px;
+    height: fit-content;
+    width: fit-content;
+    padding-left: 45px;
+  }
+  #skillsMain #skillsMainTres .imgSkills {
+    width: 85px;
+    height: 85px;
   }
   .nombres_index {
     display: grid;
