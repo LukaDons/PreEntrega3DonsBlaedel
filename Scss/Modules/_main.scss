@@ -121,7 +121,6 @@ main {
         }
 
         #skillsCertificacion {
-            display: flex;
             background-color: #636363;
             border-radius: 20px;
             height: fit-content;
@@ -130,7 +129,9 @@ main {
         }
 
         #skillsIcono {
-            gap: 10px;
+
+            display: flex;
+            gap: 20px;
 
             #coder {
                 color: $paleta_colores-coder;
@@ -259,6 +260,7 @@ main {
         background-color: #636363;
             border-radius: 20px;
             padding-bottom: 40px;
+            padding-top: 60px;
 
         .contenedor_proyecto {
             padding-top: 25px;
@@ -356,13 +358,14 @@ main {
       #contactMainTres {
         grid-area: contactMainTres;
         justify-self: end;
-        padding-right: 20px;
+        padding: 20px;
         align-self: center;
         display: flex;
-        background-color: rgba(128, 128, 128, 0.925);
+        background-color: #636363;
         height: fit-content;
         border-radius: 20px;
         width: fit-content;
+        margin: 30px;
       } 
   }
   

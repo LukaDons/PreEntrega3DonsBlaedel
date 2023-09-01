@@ -146,7 +146,6 @@ main aside p {
   animation: glowing 20s linear infinite;
 }
 #skillsMain #skillsMainDos #skillsCertificacion {
-  display: flex;
   background-color: #636363;
   border-radius: 20px;
   height: fit-content;
@@ -154,7 +153,8 @@ main aside p {
   padding: 25px;
 }
 #skillsMain #skillsMainDos #skillsIcono {
-  gap: 10px;
+  display: flex;
+  gap: 20px;
 }
 #skillsMain #skillsMainDos #skillsIcono #coder {
   color: #e5f876;
@@ -254,6 +254,7 @@ main aside p {
   background-color: #636363;
   border-radius: 20px;
   padding-bottom: 40px;
+  padding-top: 60px;
 }
 #porfolioMain #porfolioMainUno .contenedor_proyecto {
   padding-top: 25px;
@@ -339,13 +340,14 @@ main aside p {
 #ContactMain #contactMainTres {
   grid-area: contactMainTres;
   justify-self: end;
-  padding-right: 20px;
+  padding: 20px;
   align-self: center;
   display: flex;
-  background-color: rgba(128, 128, 128, 0.925);
+  background-color: #636363;
   height: fit-content;
   border-radius: 20px;
   width: fit-content;
+  margin: 30px;
 }
 
 footer {
@@ -746,6 +748,179 @@ header {
   #skillsMain #skillsMainTres .imgSkills {
     width: 85px;
     height: 85px;
+  }
+  #serviciosMain {
+    grid-area: serviciosMain;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 3fr;
+    grid-template-areas: "serviciosMainUno " "serviciosMainDos" "serviciosMainTres " "serviciosMainCuatro " "serviciosMainCinco ";
+  }
+  #serviciosMain .serviciosIconos {
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.925);
+    height: fit-content;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 2px;
+    padding-right: 5px;
+  }
+  #serviciosMain .contact-iconos {
+    width: 30px;
+    height: 40px;
+  }
+  #serviciosMain .serviciosTexto {
+    background-color: rgba(68, 66, 66, 0.925);
+    border-radius: 10px;
+    padding: 2px;
+  }
+  #serviciosMain #serviciosMainUno {
+    grid-area: serviciosMainUno;
+    padding: 5px;
+    margin: 20px;
+  }
+  #serviciosMain #serviciosMainDos {
+    grid-area: serviciosMainDos;
+    padding: 10px;
+    padding-top: 70px;
+    margin: 20px;
+  }
+  #serviciosMain #serviciosMainTres {
+    grid-area: serviciosMainTres;
+    padding: 5px;
+    margin: 20px;
+  }
+  #serviciosMain #serviciosMainCuatro {
+    grid-area: serviciosMainCuatro;
+    padding: 5px;
+    margin: 20px;
+  }
+  #serviciosMain #serviciosMainCinco {
+    grid-area: serviciosMainCinco;
+    padding: 5px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 2px;
+    justify-self: center;
+  }
+  #serviciosMain #serviciosMainCinco .imgClientes {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    padding: 2px;
+  }
+  #porfolioMain {
+    grid-area: porfolioMain;
+    height: 72.6vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.2fr;
+    grid-template-areas: "porfolioMainUno " "porfolioMainUno" "porfolioMainUno" "porfolioMainDos ";
+  }
+  #porfolioMain #porfolioMainUno {
+    grid-area: porfolioMainUno;
+    range: auto;
+    background-color: #636363;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+  }
+  #porfolioMain #porfolioMainUno .contenedor_proyecto {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  #porfolioMain #porfolioMainUno .card {
+    border: none;
+    margin-bottom: 20px;
+    white-space: nowrap;
+  }
+  #porfolioMain #porfolioMainUno .card-title {
+    font-weight: bold;
+  }
+  #porfolioMain #porfolioMainUno .card-text {
+    margin-top: -10px;
+  }
+  #porfolioMain #porfolioMainUno .card-body {
+    margin-top: 5px;
+    height: 75px;
+    text-align: center;
+    justify-content: center;
+    color: black;
+    border-radius: 2px;
+  }
+  #porfolioMain #porfolioMainUno #unic {
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: antiquewhite;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+  }
+  #porfolioMain #porfolioMainUno #unic ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+  }
+  #porfolioMain #porfolioMainDos {
+    grid-area: porfolioMainDos;
+  }
+  #ContactMain {
+    grid-area: contactMain;
+    height: 72.6vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.2fr 2fr;
+    grid-template-areas: "contactMainUno" "contactMainDos " "contactMainTres";
+  }
+  #ContactMain #contactMainUno {
+    grid-area: contactMainUno;
+    margin: 5px;
+  }
+  #ContactMain #contactMainUno #contactBorde {
+    border: 5px solid black;
+    width: fit-content;
+    padding: 8px;
+  }
+  #ContactMain #contactMainDos {
+    grid-area: contactMainDos;
+    justify-self: center;
+    align-self: center;
+  }
+  #ContactMain #contactMainDos .contactInfo {
+    margin: 0;
+  }
+  #ContactMain #contactMainTres {
+    grid-area: contactMainTres;
+    justify-self: end;
+    padding: 10px;
+    align-self: center;
+    display: flex;
+    background-color: #636363;
+    height: fit-content;
+    border-radius: 20px;
+    width: fit-content;
+    margin: 10px;
   }
   footer {
     display: grid;
