@@ -349,6 +349,12 @@ main {
         grid-area: contactMainDos;
         justify-self: center;
         align-self: center;
+        padding: 10px;
+        background-color: #636363;
+        height: fit-content;
+        border-radius: 20px;
+        width: fit-content;
+        margin: 140px;
 
         .contactInfo {
             margin: 0;
