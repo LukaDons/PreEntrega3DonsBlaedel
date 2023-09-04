@@ -670,6 +670,32 @@ header {
   }
 }
 @media (min-width: 0px) and (max-width: 575px) {
+  #indexMain {
+    background-image: url(https://josecarlosalmansa.com/img/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg);
+    height: 98vh;
+    width: 100vw;
+    grid-area: indexMain;
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: "indexMainUno" "indexMainUno" "indexMainUno";
+  }
+  #indexMain #indexMainUno {
+    grid-area: indexMainUno;
+    justify-self: center;
+    align-content: center;
+    text-align: center;
+    background-position: center bottom;
+    background-position: left;
+    padding: 100px;
+  }
+  #indexMain #indexMainUno #indexImg {
+    height: 100px;
+  }
+  #indexMain #indexMainDos {
+    grid-area: indexMainDos;
+  }
   #skillsMain {
     grid-area: skillsMain;
     height: 72.6vh;
