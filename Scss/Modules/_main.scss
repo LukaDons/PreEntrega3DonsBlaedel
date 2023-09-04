@@ -94,13 +94,13 @@ main {
             background-color: black;
             cursor: pointer;
             border: none;
-            padding: 16px 32px;
+            padding: 8px 12px;
             color: antiquewhite;
-            font-size: 24px;
+            font-size: 22px;
             font-weight: bold;
             position: relative;
             border-radius: 12px;
-            margin-top: 30px;
+            margin-top: 8px;
         }
         
         #unic ::before {
@@ -125,7 +125,7 @@ main {
             border-radius: 20px;
             height: fit-content;
             width: fit-content;
-            padding: 25px;
+            padding: 9px;
         }
 
         #skillsIcono {
@@ -150,6 +150,7 @@ main {
             height: fit-content;
             width: fit-content;
             padding-left: 45px;
+            margin-top: 110px;
 
         .imgSkills {
             width: 85px;
@@ -270,25 +271,7 @@ main {
             justify-content: center;
             gap: 20px;
           }
-          .card {
-            border: none;
-            margin-bottom: 50px;
-            white-space: nowrap;
-          }
-          .card-title {
-            font-weight: bold;
-          }
-          .card-text {
-            margin-top: -10px;
-          }
-          .card-body {
-            margin-top: 5px;
-            height: 75px;
-            text-align: center;
-            justify-content: center;
-            color: black;
-            border-radius: 2px;
-          }
+          
           #unic   {
             background-color: black;
             cursor: pointer;
@@ -328,7 +311,7 @@ main {
     grid-area: contactMain;
     height: 72.6vh;
     display: grid;
-    grid-template-columns: 2fr 1fr 1.5fr;
+    grid-template-columns: 1fr 1.5fr 2.3fr;
     grid-template-rows: 0.5fr 1fr;
     grid-template-areas: 
     "contactMainUno contactMainDos contactMainTres" 
@@ -337,6 +320,14 @@ main {
     #contactMainUno {
         grid-area: contactMainUno;
         margin: 10px;
+        justify-self: center;
+        align-self: center;
+        padding: 10px;
+        background-color: #636363;
+        height: fit-content;
+        border-radius: 20px;
+        width: fit-content;
+        margin: 140px;
 
     #contactBorde{
         border: 5px solid black;

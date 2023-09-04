@@ -123,13 +123,13 @@ main aside p {
   background-color: black;
   cursor: pointer;
   border: none;
-  padding: 16px 32px;
+  padding: 8px 12px;
   color: antiquewhite;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
   position: relative;
   border-radius: 12px;
-  margin-top: 30px;
+  margin-top: 8px;
 }
 #skillsMain #skillsMainDos #unic ::before {
   content: "";
@@ -150,7 +150,7 @@ main aside p {
   border-radius: 20px;
   height: fit-content;
   width: fit-content;
-  padding: 25px;
+  padding: 9px;
 }
 #skillsMain #skillsMainDos #skillsIcono {
   display: flex;
@@ -168,6 +168,7 @@ main aside p {
   height: fit-content;
   width: fit-content;
   padding-left: 45px;
+  margin-top: 110px;
 }
 #skillsMain #skillsMainTres .imgSkills {
   width: 85px;
@@ -264,25 +265,6 @@ main aside p {
   justify-content: center;
   gap: 20px;
 }
-#porfolioMain #porfolioMainUno .card {
-  border: none;
-  margin-bottom: 50px;
-  white-space: nowrap;
-}
-#porfolioMain #porfolioMainUno .card-title {
-  font-weight: bold;
-}
-#porfolioMain #porfolioMainUno .card-text {
-  margin-top: -10px;
-}
-#porfolioMain #porfolioMainUno .card-body {
-  margin-top: 5px;
-  height: 75px;
-  text-align: center;
-  justify-content: center;
-  color: black;
-  border-radius: 2px;
-}
 #porfolioMain #porfolioMainUno #unic {
   background-color: black;
   cursor: pointer;
@@ -316,13 +298,21 @@ main aside p {
   grid-area: contactMain;
   height: 72.6vh;
   display: grid;
-  grid-template-columns: 2fr 1fr 1.5fr;
+  grid-template-columns: 1fr 1.5fr 2.3fr;
   grid-template-rows: 0.5fr 1fr;
   grid-template-areas: "contactMainUno contactMainDos contactMainTres" "contactMainUno contactMainDos contactMainTres";
 }
 #ContactMain #contactMainUno {
   grid-area: contactMainUno;
   margin: 10px;
+  justify-self: center;
+  align-self: center;
+  padding: 10px;
+  background-color: #636363;
+  height: fit-content;
+  border-radius: 20px;
+  width: fit-content;
+  margin: 140px;
 }
 #ContactMain #contactMainUno #contactBorde {
   border: 5px solid black;
