@@ -14,17 +14,6 @@
         "skillsMainUno skillsMainDos"
         "skillsMainUno skillsMainDos";
     }
-
-    footer {
-       
-        grid-area: footer;
-
-        grid-template-columns: 0.6fr 0.4fr;
-
-
-        grid-template-areas: 
-        "footer footerDos";
-    }
 }
 
 @media screen and (max-width: 737.98px) {
@@ -144,10 +133,8 @@
               padding: 10px;
               margin: 10px;
               height: 200px;
-              width: 150px;
               background-color: #636363;
               border-radius: 20px;
-              height: fit-content;
               width: fit-content;
           
           }
@@ -187,13 +174,21 @@
           animation: glowing 20s linear infinite;
           
           }
+
+          #skillsInfo {
+            background-color: #636363;
+            border-radius: 20px;
+            height: fit-content;
+            width: 320px;
+
+        }
   
           #skillsCertificacion {
               display: flex;
               background-color: #636363;
               border-radius: 20px;
               height: fit-content;
-              width: fit-content;
+              width: 300px;
               padding: 15px;
               flex-direction: column;
           }
@@ -451,13 +446,11 @@
     width: 100vw;
     padding-top: 30px;
     bottom: 0;
-    grid-template-columns:1fr ;
-    grid-template-rows: 1fr 1fr 1fr 0.5fr;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1.5fr 1fr;
     grid-template-areas:
-     "footerUno"
-     "footerDos"
-     "footerTres"
-    "footerCuatro";
+     "footerUno footerDos footerTres"
+    "footerCuatro footerCuatro footerCuatro";
     
     #footerUno {
         grid-area: footerUno;
@@ -486,6 +479,10 @@
         justify-self: center;
         padding: 5px;
     }
+}
+
+#contactFooter {
+  width: 198vw;
 }
 
   }

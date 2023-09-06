@@ -145,6 +145,12 @@ main aside p {
   filter: blur(8px);
   animation: glowing 20s linear infinite;
 }
+#skillsMain #skillsMainDos #skillsInfo {
+  background-color: #636363;
+  border-radius: 20px;
+  height: fit-content;
+  width: fit-content;
+}
 #skillsMain #skillsMainDos #skillsCertificacion {
   background-color: #636363;
   border-radius: 20px;
@@ -609,11 +615,6 @@ header {
     grid-template-rows: 1fr 3fr 1fr;
     grid-template-areas: "skillsMainUno skillsMainDos" "skillsMainUno skillsMainDos";
   }
-  footer {
-    grid-area: footer;
-    grid-template-columns: 0.6fr 0.4fr;
-    grid-template-areas: "footer footerDos";
-  }
 }
 @media screen and (max-width: 737.98px) {
   .abrir-menu,
@@ -709,10 +710,8 @@ header {
     padding: 10px;
     margin: 10px;
     height: 200px;
-    width: 150px;
     background-color: #636363;
     border-radius: 20px;
-    height: fit-content;
     width: fit-content;
   }
   #skillsMain #skillsMainDos {
@@ -746,12 +745,18 @@ header {
     filter: blur(8px);
     animation: glowing 20s linear infinite;
   }
+  #skillsMain #skillsMainDos #skillsInfo {
+    background-color: #636363;
+    border-radius: 20px;
+    height: fit-content;
+    width: 320px;
+  }
   #skillsMain #skillsMainDos #skillsCertificacion {
     display: flex;
     background-color: #636363;
     border-radius: 20px;
     height: fit-content;
-    width: fit-content;
+    width: 300px;
     padding: 15px;
     flex-direction: column;
   }
@@ -957,9 +962,9 @@ header {
     width: 100vw;
     padding-top: 30px;
     bottom: 0;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 0.5fr;
-    grid-template-areas: "footerUno" "footerDos" "footerTres" "footerCuatro";
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1.5fr 1fr;
+    grid-template-areas: "footerUno footerDos footerTres" "footerCuatro footerCuatro footerCuatro";
   }
   footer #footerUno {
     grid-area: footerUno;
@@ -984,6 +989,9 @@ header {
     align-self: center;
     justify-self: center;
     padding: 5px;
+  }
+  #contactFooter {
+    width: 198vw;
   }
 }
 body {
