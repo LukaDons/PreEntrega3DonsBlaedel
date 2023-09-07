@@ -67,7 +67,6 @@ main aside p {
 
 #indexMain {
   background-image: url(https://josecarlosalmansa.com/img/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg);
-  height: 98vh;
   width: 100vw;
   grid-area: indexMain;
   min-height: auto;
@@ -246,6 +245,7 @@ main aside p {
 #porfolioMain {
   grid-area: porfolioMain;
   display: grid;
+  margin-top: 4.5rem;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 0.5fr 1fr;
   grid-template-areas: "porfolioMainUno porfolioMainUno porfolioMainUno" "porfolioMainDos porfolioMainDos porfolioMainDos";
@@ -256,6 +256,7 @@ main aside p {
   border-radius: 1rem;
   padding-bottom: 3rem;
   padding-top: 4rem;
+  margin: 1rem;
 }
 #porfolioMain #porfolioMainUno .contenedor_proyecto {
   padding-top: 3rem;
@@ -326,8 +327,8 @@ main aside p {
   height: fit-content;
   border-radius: 1rem;
   width: fit-content;
-  margin: 5rem;
-  margin-left: 9rem;
+  margin: 1rem;
+  margin-left: 2rem;
 }
 #ContactMain #contactMainDos .contactInfo {
   margin: 0;
@@ -342,7 +343,7 @@ main aside p {
   height: fit-content;
   border-radius: 1rem;
   width: fit-content;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 footer {
@@ -660,7 +661,6 @@ header {
 @media (min-width: 0px) and (max-width: 575px) {
   #indexMain {
     background-image: url(https://josecarlosalmansa.com/img/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg);
-    height: 98vh;
     width: 100vw;
     grid-area: indexMain;
     min-height: auto;
@@ -835,8 +835,8 @@ header {
   }
   #porfolioMain {
     grid-area: porfolioMain;
-    height: 72.6vh;
     display: grid;
+    margin-top: 3.5rem;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 0.2fr;
     grid-template-areas: "porfolioMainUno " "porfolioMainUno" "porfolioMainUno" "porfolioMainDos ";
@@ -847,6 +847,7 @@ header {
     border-radius: 1rem;
     padding-bottom: 3rem;
     padding-top: 4rem;
+    margin: 1rem;
   }
   #porfolioMain #porfolioMainUno .contenedor_proyecto {
     padding-top: 3rem;
@@ -886,11 +887,10 @@ header {
   }
   #ContactMain {
     grid-area: contactMain;
-    height: 72.6vh;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.2fr 2fr;
-    grid-template-areas: "contactMainUno" "contactMainDos " "contactMainTres";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "contactMainUno contactMainDos" "contactMainTres contactMainTres";
   }
   #ContactMain #contactMainUno {
     grid-area: contactMainUno;
@@ -917,8 +917,8 @@ header {
     height: fit-content;
     border-radius: 1rem;
     width: fit-content;
-    margin: 5rem;
-    margin-left: 6rem;
+    margin: 1rem;
+    margin-left: 1.4rem;
   }
   #ContactMain #contactMainDos .contactInfo {
     margin: 0;
@@ -933,7 +933,10 @@ header {
     height: fit-content;
     border-radius: 1rem;
     width: fit-content;
-    margin: 2rem;
+    margin: 1rem;
+  }
+  #ContactMain #contactMainTres #contactOfi {
+    padding-left: 8rem;
   }
   footer {
     display: grid;

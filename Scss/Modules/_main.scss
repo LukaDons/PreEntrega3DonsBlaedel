@@ -26,7 +26,6 @@ main {
 
 #indexMain {
     background-image: url(https://josecarlosalmansa.com/img/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg);
-    height: 98vh;
     width: 100vw;
     grid-area: indexMain;
     min-height: auto;
@@ -253,6 +252,7 @@ main {
 #porfolioMain {
     grid-area: porfolioMain;
     display: grid;
+    margin-top: 4.5rem;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 0.5fr 1fr;
     grid-template-areas: 
@@ -265,6 +265,7 @@ main {
             border-radius: 1rem;
             padding-bottom: 3rem;
             padding-top: 4rem;
+            margin: 1rem;
 
         .contenedor_proyecto {
             padding-top: 3rem;
@@ -346,8 +347,8 @@ main {
         height: fit-content;
         border-radius: 1rem;
         width: fit-content;
-        margin: 5rem;
-        margin-left: 9rem;
+        margin: 1rem;
+        margin-left: 2rem;
 
         .contactInfo {
             margin: 0;
@@ -364,7 +365,7 @@ main {
         height: fit-content;
         border-radius: 1rem;
         width: fit-content;
-        margin: 2rem;
+        margin: 1rem;
       } 
   }
   

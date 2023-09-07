@@ -81,7 +81,6 @@
 
     #indexMain {
       background-image: url(https://josecarlosalmansa.com/img/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg);
-      height: 98vh;
       width: 100vw;
       grid-area: indexMain;
       min-height: auto;
@@ -311,6 +310,7 @@
   #porfolioMain {
       grid-area: porfolioMain;
       display: grid;
+      margin-top: 3.5rem;
       grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 0.2fr;
     grid-template-areas: 
@@ -325,6 +325,7 @@
               border-radius: 1rem;
               padding-bottom: 3rem;
               padding-top: 4rem;
+              margin: 1rem;
   
           .contenedor_proyecto {
               padding-top: 3rem;
@@ -373,12 +374,11 @@
     #ContactMain {
       grid-area: contactMain;
       display: grid;
-      grid-template-columns:1fr ;
-    grid-template-rows: 1fr 0.2fr 2fr;
+      grid-template-columns:1fr 1fr;
+    grid-template-rows: 2fr 1fr;
     grid-template-areas: 
-    "contactMainUno"
-    "contactMainDos " 
-    "contactMainTres";
+    "contactMainUno contactMainDos" 
+    "contactMainTres contactMainTres";
   
       #contactMainUno {
           grid-area: contactMainUno;
@@ -407,8 +407,8 @@
           height: fit-content;
           border-radius: 1rem;
           width: fit-content;
-          margin: 5rem;
-          margin-left: 6rem;
+          margin: 1rem;
+          margin-left: 1.4rem;
   
           .contactInfo {
               margin: 0;
@@ -425,7 +425,13 @@
           height: fit-content;
           border-radius: 1rem;
           width: fit-content;
-          margin: 2rem;
+          margin: 1rem;
+
+          #contactOfi {
+            padding-left: 8rem;
+          }
+
+        
         } 
     }
 
