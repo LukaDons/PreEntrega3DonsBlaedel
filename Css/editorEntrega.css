@@ -83,7 +83,7 @@ main aside p {
   text-align: center;
   background-position: center bottom;
   background-position: left;
-  padding: 25rem;
+  padding: 10rem;
 }
 #indexMain #indexMainUno #indexImg {
   height: 20rem;
@@ -171,6 +171,7 @@ main aside p {
   height: fit-content;
   width: fit-content;
   padding-left: 1rem;
+  margin-left: 4.5rem;
   margin-top: 5rem;
 }
 #skillsMain #skillsMainTres .imgSkills {
@@ -329,6 +330,7 @@ main aside p {
   border-radius: 1rem;
   width: fit-content;
   margin: 5rem;
+  margin-left: 9rem;
 }
 #ContactMain #contactMainDos .contactInfo {
   margin: 0;
@@ -676,7 +678,7 @@ header {
     text-align: center;
     background-position: center bottom;
     background-position: left;
-    padding: 25rem;
+    padding: 10rem;
   }
   #indexMain #indexMainUno #indexImg {
     height: 20rem;
@@ -763,6 +765,7 @@ header {
     height: fit-content;
     width: fit-content;
     padding-left: 1rem;
+    margin-left: 3rem;
     margin-top: 5rem;
   }
   #skillsMain #skillsMainTres .imgSkills {
@@ -918,6 +921,7 @@ header {
     border-radius: 1rem;
     width: fit-content;
     margin: 5rem;
+    margin-left: 6rem;
   }
   #ContactMain #contactMainDos .contactInfo {
     margin: 0;
