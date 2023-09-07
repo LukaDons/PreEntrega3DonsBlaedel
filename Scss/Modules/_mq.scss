@@ -8,7 +8,7 @@
     }
 
     #skillsMain {
-        grid-template-columns: 3fr 1,5fr;
+        grid-template-columns: 3fr 1.5fr;
         grid-template-rows: 1fr 3fr 1fr;
         grid-template-areas: 
         "skillsMainUno skillsMainDos"
@@ -100,10 +100,10 @@
           text-align: center;
           background-position: center bottom;
           background-position: left;
-          padding: 100px;
+          padding: 10rem;
   
           #indexImg {
-              height: 100px;
+              height: 20rem;
           }
           
       }
@@ -112,8 +112,8 @@
           grid-area: indexMainDos;
       }
   }
-
-    #skillsMain {
+  
+  #skillsMain {
       grid-area: skillsMain;
       height: 72.6vh;
       padding-top: 60px;
@@ -127,15 +127,15 @@
   
       #skillsMainUno {
           grid-area: skillsMainUno;
-          padding: 10px;
+          padding: 1.5rem;
   
           #programador {
-              padding: 10px;
+              padding: 50px;
               margin: 10px;
-              height: 200px;
+              width: 18rem;
               background-color: #636363;
-              border-radius: 20px;
-              width: fit-content;
+              border-radius: 1rem;
+              height: fit-content;
           
           }
       }
@@ -143,19 +143,18 @@
       #skillsMainDos {
           grid-area: skillsMainDos;
           padding: 10px;
-          font-size: 1rem;
   
           #unic   {
               background-color: black;
               cursor: pointer;
               border: none;
-              padding: 16px 32px;
+              padding: 8px 12px;
               color: antiquewhite;
-              font-size: 20px;
+              font-size: 22px;
               font-weight: bold;
               position: relative;
-              border-radius: 12px;
-              margin-top: 20px;
+              border-radius: 1rem;
+              margin-top: 8px;
           }
           
           #unic ::before {
@@ -169,32 +168,36 @@
               background: linear-gradient(45deg,
               red,blue, deeppink, blue, red,blue, deeppink, blue);
           background-size: 800%;
-          border-radius: 10px;
+          border-radius: 1rem;
           filter: blur(8px);
           animation: glowing 20s linear infinite;
           
           }
-
+  
           #skillsInfo {
-            background-color: #636363;
-            border-radius: 20px;
-            height: fit-content;
-            width: 320px;
-
-        }
+              background-color: #636363;
+              border-radius: 1rem;
+              height: fit-content;
+              width: fit-content;
+  
+          }
   
           #skillsCertificacion {
-              display: flex;
               background-color: #636363;
-              border-radius: 20px;
+              border-radius: 1rem;
               height: fit-content;
-              width: 300px;
-              padding: 15px;
-              flex-direction: column;
+              width: fit-content;
+              padding: 0.6rem;
           }
   
           #skillsIcono {
-              gap: 10px;
+  
+              display: flex;
+              gap: 1.3rem;
+  
+              #coder {
+                  color: $paleta_colores-coder;
+              }
           }
           
          
@@ -202,25 +205,26 @@
       
       #skillsMainTres {
           grid-area: skillsMainTres;
-          padding: 10px;
-          margin-top: 20px;
+          padding: 1rem;
           background-color: #636363;
-              border-radius: 20px;
+              border-radius: 1rem;
               height: fit-content;
               width: fit-content;
+              padding-left: 1rem;
+              margin-top: 5rem;
   
           .imgSkills {
-              width: 85px;
-              height: 85px;
+              width: 5rem;
+              height: 5rem;
            }
       }
   }
-
+  
   #serviciosMain {
-    grid-area: serviciosMain;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 2fr;
+      grid-area: serviciosMain;
+      justify-content: center;
+      display: grid;
+      grid-template-columns: 2fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 3fr;
     grid-template-areas: 
     "serviciosMainUno "
@@ -228,216 +232,204 @@
     "serviciosMainTres "
     "serviciosMainCuatro "
     "serviciosMainCinco ";
-
-    .serviciosIconos {
-        display: flex;
-        background-color: rgba(128, 128, 128, 0.925);
-        height: fit-content;
-        border-radius: 20px;
-        width: fit-content;
-        padding: 2px;
-        padding-right: 5px;
-    }
-
-    .contact-iconos {
-        width: 30px;
-        height: 40px;
-        
-    }
-
-    .serviciosTexto {
-        background-color: $c-secundario;
-        border-radius: 10px;
-        padding: 2px;
-    }
-
-    #serviciosMainUno {
-        grid-area: serviciosMainUno;
-        padding: 5px;
-        margin: 20px;
-    }
-    
-    #serviciosMainDos {
-        grid-area: serviciosMainDos;
-        padding: 10px;
-        padding-top: 70px;
-        margin: 20px;
-    }
-
-    #serviciosMainTres {
-        grid-area: serviciosMainTres;
-        padding: 5px;
-        margin: 20px;
-
-    }
-
-    #serviciosMainCuatro {
-        grid-area: serviciosMainCuatro;
-        padding: 5px;
-        margin: 20px;
-    }
-
-    #serviciosMainCinco {
-        grid-area: serviciosMainCinco;
-        padding: 5px;
-        margin: 20px;
-        background-color: rgba(255, 255, 255, 0.4);
-        border-radius: 10px;
-       text-align: center;
-       margin-top: 1.5rem;
-       margin-bottom: 1rem;
-       padding: 2px;
-       justify-self: center;
-        
-        
-       
-
-       .imgClientes {
-        height: 50px;
-        width: 50px;
-        border-radius: 10px;
-        padding: 2px;
-       }
-    }
-
-
-        
-}
-
+  
+      .serviciosIconos {
+          display: flex;
+          background-color: rgba(128, 128, 128, 0.925);
+          height: fit-content;
+          border-radius: 1rem;
+          width: fit-content;
+          padding: 0.5rem;
+          padding-right: 1rem;
+      }
+  
+      .contact-iconos {
+          width: 4.9rem;
+          height: 5rem;
+          
+      }
+  
+      .serviciosTexto {
+          background-color: $c-secundario;
+          border-radius: 1rem;
+          padding: 0.4rem;
+      }
+  
+      #serviciosMainUno {
+          grid-area: serviciosMainUno;
+          padding: 2rem;
+          margin: 3rem;
+      }
+      
+      #serviciosMainDos {
+          grid-area: serviciosMainDos;
+          padding: 2rem;
+          margin: 3rem;
+          padding-top: 10rem;
+          
+      }
+  
+      #serviciosMainTres {
+          grid-area: serviciosMainTres;
+          padding: 2rem;
+          margin: 3rem;
+  
+      }
+  
+      #serviciosMainCuatro {
+          grid-area: serviciosMainCuatro;
+          padding: 2rem;
+          margin: 3rem;
+      }
+  
+      #serviciosMainCinco {
+          grid-area: serviciosMainCinco;
+          padding: 2rem;
+          margin: 3rem;
+          background-color: rgba(255, 255, 255, 0.4);
+          border-radius: 1rem;
+         text-align: center;
+         margin-top: 3rem;
+         margin-bottom: 2rem;
+         justify-self: center;
+          
+          
+         
+  
+         .imgClientes {
+          height: 8rem;
+          width: 8rem;
+          border-radius: 1rem;
+          padding: 0.5rem;
+         }
+      }
+  
+  
+          
+  }
+  
   #porfolioMain {
-    grid-area: porfolioMain;
-    height: 72.6vh;
-    display: grid;
-    grid-template-columns: 1fr;
+      grid-area: porfolioMain;
+      height: 72.6vh;
+      display: grid;
+      grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 0.2fr;
     grid-template-areas: 
     "porfolioMainUno " 
     "porfolioMainUno"
     "porfolioMainUno"
     "porfolioMainDos ";
-
-    #porfolioMainUno {
-        grid-area: porfolioMainUno;
-        range: auto;
-        background-color: #636363;
-            border-radius: 20px;
-            padding-bottom: 20px;
-            padding-top: 30px;
-
-        .contenedor_proyecto {
-            padding-top: 15px;
-            padding-bottom: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
+  
+      #porfolioMainUno {
+          grid-area: porfolioMainUno;
+          background-color: #636363;
+              border-radius: 1rem;
+              padding-bottom: 3rem;
+              padding-top: 4rem;
+  
+          .contenedor_proyecto {
+              padding-top: 3rem;
+              padding-bottom: 2rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 1.5rem;
+            }
+            
+            #unic   {
+              background-color: black;
+              cursor: pointer;
+              border: none;
+              padding: 1rem 2rem;
+              color: antiquewhite;
+              font-size: 2rem;
+              font-weight: bold;
+              position: relative;
+              border-radius: 1rem;
           }
-          .card {
-            border: none;
-            margin-bottom: 20px;
-            white-space: nowrap;
+          
+          #unic ::before {
+              content:"";
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: -1;
+              width: 100%;
+              height: 100%;
+              background: linear-gradient(45deg,
+              red,blue, deeppink, blue, red,blue, deeppink, blue);
+          background-size: 800%;
+          border-radius: 1rem;
+          filter: blur(8px);
+          animation: glowing 20s linear infinite;
+          
           }
-          .card-title {
-            font-weight: bold;
-          }
-          .card-text {
-            margin-top: -10px;
-          }
-          .card-body {
-            margin-top: 5px;
-            height: 75px;
-            text-align: center;
-            justify-content: center;
-            color: black;
-            border-radius: 2px;
-          }
-          #unic   {
-            background-color: black;
-            cursor: pointer;
-            border: none;
-            padding: 16px 32px;
-            color: antiquewhite;
-            font-size: 24px;
-            font-weight: bold;
-            position: relative;
-            border-radius: 12px;
         }
-        
-        #unic ::before {
-            content:"";
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg,
-            red,blue, deeppink, blue, red,blue, deeppink, blue);
-        background-size: 800%;
-        border-radius: 10px;
-        filter: blur(8px);
-        animation: glowing 20s linear infinite;
-        
+  
+        #porfolioMainDos {
+          grid-area: porfolioMainDos;
         }
-      }
-
-      #porfolioMainDos {
-        grid-area: porfolioMainDos;
-      }
-  }
-
-  #ContactMain {
-    grid-area: contactMain;
-    height: 72.6vh;
-    display: grid;
-    grid-template-columns:1fr ;
+    }
+  
+    #ContactMain {
+      grid-area: contactMain;
+      height: 72.6vh;
+      display: grid;
+      grid-template-columns:1fr ;
     grid-template-rows: 1fr 0.2fr 2fr;
     grid-template-areas: 
     "contactMainUno"
     "contactMainDos " 
     "contactMainTres";
-
-    #contactMainUno {
-        grid-area: contactMainUno;
-        margin: 5px;
-
-    #contactBorde{
-        border: 5px solid black;
-    width: fit-content;
-    padding: 8px;
-    }
-      }
-
-      #contactMainDos {
-        grid-area: contactMainDos;
-        justify-self: center;
-        align-self: center;
-        padding: 10px;
-        background-color: #636363;
-        height: fit-content;
-        border-radius: 20px;
-        width: fit-content;
-        margin: 60px;
-
-        .contactInfo {
-            margin: 0;
-        }
-      }
-
-      #contactMainTres {
-        grid-area: contactMainTres;
-        justify-self: end;
-        padding: 10px;
-        align-self: center;
-        display: flex;
-        background-color: #636363;
-        height: fit-content;
-        border-radius: 20px;
-        width: fit-content;
-        margin: 10px;
-      } 
-  }
   
+      #contactMainUno {
+          grid-area: contactMainUno;
+          margin: 1rem;
+          justify-self: center;
+          align-self: center;
+          padding: 1rem;
+          background-color: #636363;
+          height: fit-content;
+          border-radius: 1rem;
+          width: fit-content;
+  
+      #contactBorde{
+          border: 0.5rem solid black;
+      width: fit-content;
+      padding: 0.8rem;
+      }
+        }
+  
+        #contactMainDos {
+          grid-area: contactMainDos;
+          justify-self: center;
+          align-self: center;
+          padding: 1rem;
+          background-color: #636363;
+          height: fit-content;
+          border-radius: 1rem;
+          width: fit-content;
+          margin: 5rem;
+  
+          .contactInfo {
+              margin: 0;
+          }
+        }
+  
+        #contactMainTres {
+          grid-area: contactMainTres;
+          justify-self: end;
+          padding: 1.3rem;
+          align-self: center;
+          display: flex;
+          background-color: #636363;
+          height: fit-content;
+          border-radius: 1rem;
+          width: fit-content;
+          margin: 2rem;
+        } 
+    }
+
     
   footer {
     display: grid;

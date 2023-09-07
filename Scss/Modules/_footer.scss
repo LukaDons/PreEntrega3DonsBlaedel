@@ -1,9 +1,8 @@
 footer {
     display: grid;
     background-color: $c-secundario;
-    height: 200px;
-    width: 100vw;
-    padding-top: 30px;
+    height: 12rem;
+    padding-top: 2rem;
     bottom: 0;
     grid-template-columns: 2fr 1fr 2fr;
     grid-template-rows: 1.5fr 1fr;
@@ -15,21 +14,21 @@ footer {
         grid-area: footerUno;
         justify-self: right;
         align-self: center;
-        padding: 5px;
+        padding: 0.5rem;
     }
     
     #footerDos {
         grid-area: footerDos;
         justify-self: center;
         align-self: center;
-        padding: 5px;
+        padding: 0.5rem;
     }
     
     #footerTres {
         grid-area: footerTres;
         justify-self: left;
         align-self: center;
-        padding: 5px;
+        padding: 0.5rem;
     }
     
     #footerCuatro {
@@ -42,8 +41,6 @@ footer {
 
 #indexFooter {
     grid-area: indexFooter;
-    display: grid;
-    height: 250px;
 }
 
 

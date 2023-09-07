@@ -45,10 +45,10 @@ main {
         text-align: center;
         background-position: center bottom;
         background-position: left;
-        padding: 200px;
+        padding: 25rem;
 
         #indexImg {
-            height: 300px;
+            height: 12rem;
         }
         
     }
@@ -71,17 +71,15 @@ main {
 
     #skillsMainUno {
         grid-area: skillsMainUno;
-        padding: 30px;
+        padding: 1.5rem;
 
         #programador {
             padding: 50px;
             margin: 10px;
-            height: 500px;
-            width: 450px;
+            width: 18rem;
             background-color: #636363;
-            border-radius: 20px;
+            border-radius: 1rem;
             height: fit-content;
-            width: fit-content;
         
         }
     }
@@ -99,7 +97,7 @@ main {
             font-size: 22px;
             font-weight: bold;
             position: relative;
-            border-radius: 12px;
+            border-radius: 1rem;
             margin-top: 8px;
         }
         
@@ -114,7 +112,7 @@ main {
             background: linear-gradient(45deg,
             red,blue, deeppink, blue, red,blue, deeppink, blue);
         background-size: 800%;
-        border-radius: 10px;
+        border-radius: 1rem;
         filter: blur(8px);
         animation: glowing 20s linear infinite;
         
@@ -122,7 +120,7 @@ main {
 
         #skillsInfo {
             background-color: #636363;
-            border-radius: 20px;
+            border-radius: 1rem;
             height: fit-content;
             width: fit-content;
 
@@ -130,16 +128,16 @@ main {
 
         #skillsCertificacion {
             background-color: #636363;
-            border-radius: 20px;
+            border-radius: 1rem;
             height: fit-content;
             width: fit-content;
-            padding: 9px;
+            padding: 0.6rem;
         }
 
         #skillsIcono {
 
             display: flex;
-            gap: 20px;
+            gap: 1.3rem;
 
             #coder {
                 color: $paleta_colores-coder;
@@ -151,18 +149,17 @@ main {
     
     #skillsMainTres {
         grid-area: skillsMainTres;
-        padding: 20px;
-        margin-top: 30px;
+        padding: 1rem;
         background-color: #636363;
-            border-radius: 20px;
+            border-radius: 1rem;
             height: fit-content;
             width: fit-content;
-            padding-left: 45px;
-            margin-top: 110px;
+            padding-left: 1rem;
+            margin-top: 5rem;
 
         .imgSkills {
-            width: 85px;
-            height: 85px;
+            width: 5rem;
+            height: 5rem;
          }
     }
 }
@@ -182,70 +179,70 @@ main {
         display: flex;
         background-color: rgba(128, 128, 128, 0.925);
         height: fit-content;
-        border-radius: 20px;
+        border-radius: 1rem;
         width: fit-content;
-        padding: 5px;
-        padding-right: 10px;
+        padding: 0.5rem;
+        padding-right: 1rem;
     }
 
     .contact-iconos {
-        width: 70px;
-        height: 80px;
+        width: 4.9rem;
+        height: 5rem;
         
     }
 
     .serviciosTexto {
         background-color: $c-secundario;
-        border-radius: 20px;
-        padding: 5px;
+        border-radius: 1rem;
+        padding: 0.4rem;
     }
 
     #serviciosMainUno {
         grid-area: serviciosMainUno;
-        padding: 10px;
-        margin: 50px;
+        padding: 2rem;
+        margin: 3rem;
     }
     
     #serviciosMainDos {
         grid-area: serviciosMainDos;
-        padding: 10px;
-        padding-top: 130px;
-        margin: 50px;
+        padding: 2rem;
+        margin: 3rem;
+        padding-top: 10rem;
+        
     }
 
     #serviciosMainTres {
         grid-area: serviciosMainTres;
-        padding: 10px;
-        margin: 50px;
+        padding: 2rem;
+        margin: 3rem;
 
     }
 
     #serviciosMainCuatro {
         grid-area: serviciosMainCuatro;
-        padding: 10px;
-        margin: 50px;
+        padding: 2rem;
+        margin: 3rem;
     }
 
     #serviciosMainCinco {
         grid-area: serviciosMainCinco;
-        padding: 10px;
-        margin: 50px;
+        padding: 2rem;
+        margin: 3rem;
         background-color: rgba(255, 255, 255, 0.4);
-        border-radius: 20px;
+        border-radius: 1rem;
        text-align: center;
        margin-top: 3rem;
        margin-bottom: 2rem;
-       padding: 5px;
        justify-self: center;
         
         
        
 
        .imgClientes {
-        height: 110px;
-        width: 110px;
-        border-radius: 20px;
-        padding: 5px;
+        height: 8rem;
+        width: 8rem;
+        border-radius: 1rem;
+        padding: 0.5rem;
        }
     }
 
@@ -265,31 +262,30 @@ main {
 
     #porfolioMainUno {
         grid-area: porfolioMainUno;
-        range: auto;
         background-color: #636363;
-            border-radius: 20px;
-            padding-bottom: 40px;
-            padding-top: 60px;
+            border-radius: 1rem;
+            padding-bottom: 3rem;
+            padding-top: 4rem;
 
         .contenedor_proyecto {
-            padding-top: 25px;
-            padding-bottom: 40px;
+            padding-top: 3rem;
+            padding-bottom: 2rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 20px;
+            gap: 1.5rem;
           }
           
           #unic   {
             background-color: black;
             cursor: pointer;
             border: none;
-            padding: 16px 32px;
+            padding: 1rem 2rem;
             color: antiquewhite;
-            font-size: 24px;
+            font-size: 2rem;
             font-weight: bold;
             position: relative;
-            border-radius: 12px;
+            border-radius: 1rem;
         }
         
         #unic ::before {
@@ -303,7 +299,7 @@ main {
             background: linear-gradient(45deg,
             red,blue, deeppink, blue, red,blue, deeppink, blue);
         background-size: 800%;
-        border-radius: 10px;
+        border-radius: 1rem;
         filter: blur(8px);
         animation: glowing 20s linear infinite;
         
@@ -327,20 +323,19 @@ main {
 
     #contactMainUno {
         grid-area: contactMainUno;
-        margin: 10px;
+        margin: 1rem;
         justify-self: center;
         align-self: center;
-        padding: 10px;
+        padding: 1rem;
         background-color: #636363;
         height: fit-content;
-        border-radius: 20px;
+        border-radius: 1rem;
         width: fit-content;
-        margin: 140px;
 
     #contactBorde{
-        border: 5px solid black;
+        border: 0.5rem solid black;
     width: fit-content;
-    padding: 8px;
+    padding: 0.8rem;
     }
       }
 
@@ -348,12 +343,12 @@ main {
         grid-area: contactMainDos;
         justify-self: center;
         align-self: center;
-        padding: 10px;
+        padding: 1rem;
         background-color: #636363;
         height: fit-content;
-        border-radius: 20px;
+        border-radius: 1rem;
         width: fit-content;
-        margin: 140px;
+        margin: 5rem;
 
         .contactInfo {
             margin: 0;
@@ -363,14 +358,14 @@ main {
       #contactMainTres {
         grid-area: contactMainTres;
         justify-self: end;
-        padding: 20px;
+        padding: 1.3rem;
         align-self: center;
         display: flex;
         background-color: #636363;
         height: fit-content;
-        border-radius: 20px;
+        border-radius: 1rem;
         width: fit-content;
-        margin: 30px;
+        margin: 2rem;
       } 
   }
   

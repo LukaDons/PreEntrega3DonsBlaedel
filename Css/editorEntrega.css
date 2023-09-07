@@ -83,10 +83,10 @@ main aside p {
   text-align: center;
   background-position: center bottom;
   background-position: left;
-  padding: 200px;
+  padding: 25rem;
 }
 #indexMain #indexMainUno #indexImg {
-  height: 300px;
+  height: 20rem;
 }
 #indexMain #indexMainDos {
   grid-area: indexMainDos;
@@ -103,17 +103,15 @@ main aside p {
 }
 #skillsMain #skillsMainUno {
   grid-area: skillsMainUno;
-  padding: 30px;
+  padding: 1.5rem;
 }
 #skillsMain #skillsMainUno #programador {
   padding: 50px;
   margin: 10px;
-  height: 500px;
-  width: 450px;
+  width: 18rem;
   background-color: #636363;
-  border-radius: 20px;
+  border-radius: 1rem;
   height: fit-content;
-  width: fit-content;
 }
 #skillsMain #skillsMainDos {
   grid-area: skillsMainDos;
@@ -128,7 +126,7 @@ main aside p {
   font-size: 22px;
   font-weight: bold;
   position: relative;
-  border-radius: 12px;
+  border-radius: 1rem;
   margin-top: 8px;
 }
 #skillsMain #skillsMainDos #unic ::before {
@@ -141,44 +139,43 @@ main aside p {
   height: 100%;
   background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
   background-size: 800%;
-  border-radius: 10px;
+  border-radius: 1rem;
   filter: blur(8px);
   animation: glowing 20s linear infinite;
 }
 #skillsMain #skillsMainDos #skillsInfo {
   background-color: #636363;
-  border-radius: 20px;
+  border-radius: 1rem;
   height: fit-content;
   width: fit-content;
 }
 #skillsMain #skillsMainDos #skillsCertificacion {
   background-color: #636363;
-  border-radius: 20px;
+  border-radius: 1rem;
   height: fit-content;
   width: fit-content;
-  padding: 9px;
+  padding: 0.6rem;
 }
 #skillsMain #skillsMainDos #skillsIcono {
   display: flex;
-  gap: 20px;
+  gap: 1.3rem;
 }
 #skillsMain #skillsMainDos #skillsIcono #coder {
   color: #e5f876;
 }
 #skillsMain #skillsMainTres {
   grid-area: skillsMainTres;
-  padding: 20px;
-  margin-top: 30px;
+  padding: 1rem;
   background-color: #636363;
-  border-radius: 20px;
+  border-radius: 1rem;
   height: fit-content;
   width: fit-content;
-  padding-left: 45px;
-  margin-top: 110px;
+  padding-left: 1rem;
+  margin-top: 5rem;
 }
 #skillsMain #skillsMainTres .imgSkills {
-  width: 85px;
-  height: 85px;
+  width: 5rem;
+  height: 5rem;
 }
 
 #serviciosMain {
@@ -193,58 +190,57 @@ main aside p {
   display: flex;
   background-color: rgba(128, 128, 128, 0.925);
   height: fit-content;
-  border-radius: 20px;
+  border-radius: 1rem;
   width: fit-content;
-  padding: 5px;
-  padding-right: 10px;
+  padding: 0.5rem;
+  padding-right: 1rem;
 }
 #serviciosMain .contact-iconos {
-  width: 70px;
-  height: 80px;
+  width: 4.9rem;
+  height: 5rem;
 }
 #serviciosMain .serviciosTexto {
   background-color: rgba(68, 66, 66, 0.925);
-  border-radius: 20px;
-  padding: 5px;
+  border-radius: 1rem;
+  padding: 0.4rem;
 }
 #serviciosMain #serviciosMainUno {
   grid-area: serviciosMainUno;
-  padding: 10px;
-  margin: 50px;
+  padding: 2rem;
+  margin: 3rem;
 }
 #serviciosMain #serviciosMainDos {
   grid-area: serviciosMainDos;
-  padding: 10px;
-  padding-top: 130px;
-  margin: 50px;
+  padding: 2rem;
+  margin: 3rem;
+  padding-top: 10rem;
 }
 #serviciosMain #serviciosMainTres {
   grid-area: serviciosMainTres;
-  padding: 10px;
-  margin: 50px;
+  padding: 2rem;
+  margin: 3rem;
 }
 #serviciosMain #serviciosMainCuatro {
   grid-area: serviciosMainCuatro;
-  padding: 10px;
-  margin: 50px;
+  padding: 2rem;
+  margin: 3rem;
 }
 #serviciosMain #serviciosMainCinco {
   grid-area: serviciosMainCinco;
-  padding: 10px;
-  margin: 50px;
+  padding: 2rem;
+  margin: 3rem;
   background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 20px;
+  border-radius: 1rem;
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 2rem;
-  padding: 5px;
   justify-self: center;
 }
 #serviciosMain #serviciosMainCinco .imgClientes {
-  height: 110px;
-  width: 110px;
-  border-radius: 20px;
-  padding: 5px;
+  height: 8rem;
+  width: 8rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
 }
 
 #porfolioMain {
@@ -257,30 +253,29 @@ main aside p {
 }
 #porfolioMain #porfolioMainUno {
   grid-area: porfolioMainUno;
-  range: auto;
   background-color: #636363;
-  border-radius: 20px;
-  padding-bottom: 40px;
-  padding-top: 60px;
+  border-radius: 1rem;
+  padding-bottom: 3rem;
+  padding-top: 4rem;
 }
 #porfolioMain #porfolioMainUno .contenedor_proyecto {
-  padding-top: 25px;
-  padding-bottom: 40px;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 1.5rem;
 }
 #porfolioMain #porfolioMainUno #unic {
   background-color: black;
   cursor: pointer;
   border: none;
-  padding: 16px 32px;
+  padding: 1rem 2rem;
   color: antiquewhite;
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: bold;
   position: relative;
-  border-radius: 12px;
+  border-radius: 1rem;
 }
 #porfolioMain #porfolioMainUno #unic ::before {
   content: "";
@@ -292,7 +287,7 @@ main aside p {
   height: 100%;
   background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
   background-size: 800%;
-  border-radius: 10px;
+  border-radius: 1rem;
   filter: blur(8px);
   animation: glowing 20s linear infinite;
 }
@@ -310,31 +305,30 @@ main aside p {
 }
 #ContactMain #contactMainUno {
   grid-area: contactMainUno;
-  margin: 10px;
+  margin: 1rem;
   justify-self: center;
   align-self: center;
-  padding: 10px;
+  padding: 1rem;
   background-color: #636363;
   height: fit-content;
-  border-radius: 20px;
+  border-radius: 1rem;
   width: fit-content;
-  margin: 140px;
 }
 #ContactMain #contactMainUno #contactBorde {
-  border: 5px solid black;
+  border: 0.5rem solid black;
   width: fit-content;
-  padding: 8px;
+  padding: 0.8rem;
 }
 #ContactMain #contactMainDos {
   grid-area: contactMainDos;
   justify-self: center;
   align-self: center;
-  padding: 10px;
+  padding: 1rem;
   background-color: #636363;
   height: fit-content;
-  border-radius: 20px;
+  border-radius: 1rem;
   width: fit-content;
-  margin: 140px;
+  margin: 5rem;
 }
 #ContactMain #contactMainDos .contactInfo {
   margin: 0;
@@ -342,22 +336,21 @@ main aside p {
 #ContactMain #contactMainTres {
   grid-area: contactMainTres;
   justify-self: end;
-  padding: 20px;
+  padding: 1.3rem;
   align-self: center;
   display: flex;
   background-color: #636363;
   height: fit-content;
-  border-radius: 20px;
+  border-radius: 1rem;
   width: fit-content;
-  margin: 30px;
+  margin: 2rem;
 }
 
 footer {
   display: grid;
   background-color: rgba(68, 66, 66, 0.925);
-  height: 200px;
-  width: 100vw;
-  padding-top: 30px;
+  height: 12rem;
+  padding-top: 2rem;
   bottom: 0;
   grid-template-columns: 2fr 1fr 2fr;
   grid-template-rows: 1.5fr 1fr;
@@ -367,19 +360,19 @@ footer #footerUno {
   grid-area: footerUno;
   justify-self: right;
   align-self: center;
-  padding: 5px;
+  padding: 0.5rem;
 }
 footer #footerDos {
   grid-area: footerDos;
   justify-self: center;
   align-self: center;
-  padding: 5px;
+  padding: 0.5rem;
 }
 footer #footerTres {
   grid-area: footerTres;
   justify-self: left;
   align-self: center;
-  padding: 5px;
+  padding: 0.5rem;
 }
 footer #footerCuatro {
   grid-area: footerCuatro;
@@ -390,8 +383,6 @@ footer #footerCuatro {
 
 #indexFooter {
   grid-area: indexFooter;
-  display: grid;
-  height: 250px;
 }
 
 #skillsFooter {
@@ -442,7 +433,7 @@ body a {
 #indexBody {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 0, 5fr 3fr 0, 7fr;
+  grid-template-rows: 0.5fr 3fr 0.7fr;
   grid-template-areas: "indexHeader indexHeader indexHeader" "indexMain indexMain indexMain" "indexFooter indexFooter indexFooter";
 }
 
@@ -506,7 +497,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: 1rem;
 }
 
 #indexHeader {
@@ -515,7 +506,7 @@ header {
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "indexHeaderUno indexHeaderDos" "indexHeaderUno indexHeaderDos";
-  height: 100px;
+  height: 6rem;
 }
 #indexHeader .abrir-menu,
 #indexHeader .cerrar-menu {
@@ -542,7 +533,7 @@ header {
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "skillsHeaderUno skillsHeaderDos" "skillsHeaderUno skillsHeaderDos";
-  height: 100px;
+  height: 6rem;
 }
 #skillsHeader #skillsHeaderUno {
   grid-area: skillsHeaderUno;
@@ -550,7 +541,7 @@ header {
 #skillsHeader #skillsHeaderDos {
   grid-area: skillsHeaderDos;
   justify-self: end;
-  padding: 25px;
+  padding: 2rem;
 }
 
 #serviciosHeader {
@@ -559,7 +550,7 @@ header {
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "serviciosHeaderUno serviciosHeaderDos" "serviciosHeaderUno serviciosHeaderDos";
-  height: 100px;
+  height: 6rem;
 }
 #serviciosHeader #serviciosHeaderUno {
   grid-area: serviciosHeaderUno;
@@ -567,7 +558,7 @@ header {
 #serviciosHeader #serviciosHeaderDos {
   grid-area: serviciosHeaderDos;
   justify-self: end;
-  padding: 25px;
+  padding: 2rem;
 }
 
 #porfolioHeader {
@@ -576,7 +567,7 @@ header {
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "porfolioHeaderUno porfolioHeaderDos" "porfolioHeaderUno porfolioHeaderDos";
-  height: 100px;
+  height: 6rem;
 }
 #porfolioHeader #porfolioHeaderUno {
   grid-area: porfolioHeaderUno;
@@ -584,7 +575,7 @@ header {
 #porfolioHeader #porfolioHeaderDos {
   grid-area: porfolioHeaderDos;
   justify-self: end;
-  padding: 25px;
+  padding: 2rem;
 }
 
 #contactHeader {
@@ -593,7 +584,7 @@ header {
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "contactHeaderUno contactHeaderDos" "contactHeaderUno contactHeaderDos";
-  height: 100px;
+  height: 6rem;
 }
 #contactHeader #contactHeaderUno {
   grid-area: contactHeaderUno;
@@ -601,7 +592,7 @@ header {
 #contactHeader #contactHeaderDos {
   grid-area: contactHeaderDos;
   justify-self: end;
-  padding: 25px;
+  padding: 2rem;
 }
 
 @media (min-width: 300px) and (max-width: 576px) {
@@ -611,7 +602,7 @@ header {
     grid-template-areas: "skillsMainDos skillsMainUno ";
   }
   #skillsMain {
-    grid-template-columns: 3fr 1, 5fr;
+    grid-template-columns: 3fr 1.5fr;
     grid-template-rows: 1fr 3fr 1fr;
     grid-template-areas: "skillsMainUno skillsMainDos" "skillsMainUno skillsMainDos";
   }
@@ -685,10 +676,10 @@ header {
     text-align: center;
     background-position: center bottom;
     background-position: left;
-    padding: 100px;
+    padding: 25rem;
   }
   #indexMain #indexMainUno #indexImg {
-    height: 100px;
+    height: 20rem;
   }
   #indexMain #indexMainDos {
     grid-area: indexMainDos;
@@ -704,32 +695,31 @@ header {
   }
   #skillsMain #skillsMainUno {
     grid-area: skillsMainUno;
-    padding: 10px;
+    padding: 1.5rem;
   }
   #skillsMain #skillsMainUno #programador {
-    padding: 10px;
+    padding: 50px;
     margin: 10px;
-    height: 200px;
+    width: 18rem;
     background-color: #636363;
-    border-radius: 20px;
-    width: fit-content;
+    border-radius: 1rem;
+    height: fit-content;
   }
   #skillsMain #skillsMainDos {
     grid-area: skillsMainDos;
     padding: 10px;
-    font-size: 1rem;
   }
   #skillsMain #skillsMainDos #unic {
     background-color: black;
     cursor: pointer;
     border: none;
-    padding: 16px 32px;
+    padding: 8px 12px;
     color: antiquewhite;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     position: relative;
-    border-radius: 12px;
-    margin-top: 20px;
+    border-radius: 1rem;
+    margin-top: 8px;
   }
   #skillsMain #skillsMainDos #unic ::before {
     content: "";
@@ -741,40 +731,43 @@ header {
     height: 100%;
     background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
     background-size: 800%;
-    border-radius: 10px;
+    border-radius: 1rem;
     filter: blur(8px);
     animation: glowing 20s linear infinite;
   }
   #skillsMain #skillsMainDos #skillsInfo {
     background-color: #636363;
-    border-radius: 20px;
-    height: fit-content;
-    width: 320px;
-  }
-  #skillsMain #skillsMainDos #skillsCertificacion {
-    display: flex;
-    background-color: #636363;
-    border-radius: 20px;
-    height: fit-content;
-    width: 300px;
-    padding: 15px;
-    flex-direction: column;
-  }
-  #skillsMain #skillsMainDos #skillsIcono {
-    gap: 10px;
-  }
-  #skillsMain #skillsMainTres {
-    grid-area: skillsMainTres;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: #636363;
-    border-radius: 20px;
+    border-radius: 1rem;
     height: fit-content;
     width: fit-content;
   }
+  #skillsMain #skillsMainDos #skillsCertificacion {
+    background-color: #636363;
+    border-radius: 1rem;
+    height: fit-content;
+    width: fit-content;
+    padding: 0.6rem;
+  }
+  #skillsMain #skillsMainDos #skillsIcono {
+    display: flex;
+    gap: 1.3rem;
+  }
+  #skillsMain #skillsMainDos #skillsIcono #coder {
+    color: #e5f876;
+  }
+  #skillsMain #skillsMainTres {
+    grid-area: skillsMainTres;
+    padding: 1rem;
+    background-color: #636363;
+    border-radius: 1rem;
+    height: fit-content;
+    width: fit-content;
+    padding-left: 1rem;
+    margin-top: 5rem;
+  }
   #skillsMain #skillsMainTres .imgSkills {
-    width: 85px;
-    height: 85px;
+    width: 5rem;
+    height: 5rem;
   }
   #serviciosMain {
     grid-area: serviciosMain;
@@ -788,58 +781,57 @@ header {
     display: flex;
     background-color: rgba(128, 128, 128, 0.925);
     height: fit-content;
-    border-radius: 20px;
+    border-radius: 1rem;
     width: fit-content;
-    padding: 2px;
-    padding-right: 5px;
+    padding: 0.5rem;
+    padding-right: 1rem;
   }
   #serviciosMain .contact-iconos {
-    width: 30px;
-    height: 40px;
+    width: 4.9rem;
+    height: 5rem;
   }
   #serviciosMain .serviciosTexto {
     background-color: rgba(68, 66, 66, 0.925);
-    border-radius: 10px;
-    padding: 2px;
+    border-radius: 1rem;
+    padding: 0.4rem;
   }
   #serviciosMain #serviciosMainUno {
     grid-area: serviciosMainUno;
-    padding: 5px;
-    margin: 20px;
+    padding: 2rem;
+    margin: 3rem;
   }
   #serviciosMain #serviciosMainDos {
     grid-area: serviciosMainDos;
-    padding: 10px;
-    padding-top: 70px;
-    margin: 20px;
+    padding: 2rem;
+    margin: 3rem;
+    padding-top: 10rem;
   }
   #serviciosMain #serviciosMainTres {
     grid-area: serviciosMainTres;
-    padding: 5px;
-    margin: 20px;
+    padding: 2rem;
+    margin: 3rem;
   }
   #serviciosMain #serviciosMainCuatro {
     grid-area: serviciosMainCuatro;
-    padding: 5px;
-    margin: 20px;
+    padding: 2rem;
+    margin: 3rem;
   }
   #serviciosMain #serviciosMainCinco {
     grid-area: serviciosMainCinco;
-    padding: 5px;
-    margin: 20px;
+    padding: 2rem;
+    margin: 3rem;
     background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 10px;
+    border-radius: 1rem;
     text-align: center;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-    padding: 2px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
     justify-self: center;
   }
   #serviciosMain #serviciosMainCinco .imgClientes {
-    height: 50px;
-    width: 50px;
-    border-radius: 10px;
-    padding: 2px;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
   }
   #porfolioMain {
     grid-area: porfolioMain;
@@ -851,49 +843,29 @@ header {
   }
   #porfolioMain #porfolioMainUno {
     grid-area: porfolioMainUno;
-    range: auto;
     background-color: #636363;
-    border-radius: 20px;
-    padding-bottom: 20px;
-    padding-top: 30px;
+    border-radius: 1rem;
+    padding-bottom: 3rem;
+    padding-top: 4rem;
   }
   #porfolioMain #porfolioMainUno .contenedor_proyecto {
-    padding-top: 15px;
-    padding-bottom: 20px;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-  }
-  #porfolioMain #porfolioMainUno .card {
-    border: none;
-    margin-bottom: 20px;
-    white-space: nowrap;
-  }
-  #porfolioMain #porfolioMainUno .card-title {
-    font-weight: bold;
-  }
-  #porfolioMain #porfolioMainUno .card-text {
-    margin-top: -10px;
-  }
-  #porfolioMain #porfolioMainUno .card-body {
-    margin-top: 5px;
-    height: 75px;
-    text-align: center;
-    justify-content: center;
-    color: black;
-    border-radius: 2px;
+    gap: 1.5rem;
   }
   #porfolioMain #porfolioMainUno #unic {
     background-color: black;
     cursor: pointer;
     border: none;
-    padding: 16px 32px;
+    padding: 1rem 2rem;
     color: antiquewhite;
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: bold;
     position: relative;
-    border-radius: 12px;
+    border-radius: 1rem;
   }
   #porfolioMain #porfolioMainUno #unic ::before {
     content: "";
@@ -905,7 +877,7 @@ header {
     height: 100%;
     background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
     background-size: 800%;
-    border-radius: 10px;
+    border-radius: 1rem;
     filter: blur(8px);
     animation: glowing 20s linear infinite;
   }
@@ -922,23 +894,30 @@ header {
   }
   #ContactMain #contactMainUno {
     grid-area: contactMainUno;
-    margin: 5px;
+    margin: 1rem;
+    justify-self: center;
+    align-self: center;
+    padding: 1rem;
+    background-color: #636363;
+    height: fit-content;
+    border-radius: 1rem;
+    width: fit-content;
   }
   #ContactMain #contactMainUno #contactBorde {
-    border: 5px solid black;
+    border: 0.5rem solid black;
     width: fit-content;
-    padding: 8px;
+    padding: 0.8rem;
   }
   #ContactMain #contactMainDos {
     grid-area: contactMainDos;
     justify-self: center;
     align-self: center;
-    padding: 10px;
+    padding: 1rem;
     background-color: #636363;
     height: fit-content;
-    border-radius: 20px;
+    border-radius: 1rem;
     width: fit-content;
-    margin: 60px;
+    margin: 5rem;
   }
   #ContactMain #contactMainDos .contactInfo {
     margin: 0;
@@ -946,14 +925,14 @@ header {
   #ContactMain #contactMainTres {
     grid-area: contactMainTres;
     justify-self: end;
-    padding: 10px;
+    padding: 1.3rem;
     align-self: center;
     display: flex;
     background-color: #636363;
     height: fit-content;
-    border-radius: 20px;
+    border-radius: 1rem;
     width: fit-content;
-    margin: 10px;
+    margin: 2rem;
   }
   footer {
     display: grid;
