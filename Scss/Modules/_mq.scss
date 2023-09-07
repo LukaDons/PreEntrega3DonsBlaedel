@@ -115,7 +115,6 @@
   
   #skillsMain {
       grid-area: skillsMain;
-      height: 72.6vh;
       padding-top: 60px;
       display: grid;
       grid-template-columns: 1fr;
@@ -311,7 +310,6 @@
   
   #porfolioMain {
       grid-area: porfolioMain;
-      height: 72.6vh;
       display: grid;
       grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 0.2fr;
@@ -374,7 +372,6 @@
   
     #ContactMain {
       grid-area: contactMain;
-      height: 72.6vh;
       display: grid;
       grid-template-columns:1fr ;
     grid-template-rows: 1fr 0.2fr 2fr;
@@ -436,7 +433,7 @@
   footer {
     display: grid;
     background-color: $c-secundario;
-    height: 200px;
+    height: 12rem;
     width: 100vw;
     padding-top: 30px;
     bottom: 0;
@@ -476,7 +473,7 @@
 }
 
 #contactFooter {
-  width: 198vw;
+  width: 100vw;
 }
 
   }

@@ -2,6 +2,7 @@ footer {
     display: grid;
     background-color: $c-secundario;
     height: 12rem;
+    width: 100vw;
     padding-top: 2rem;
     bottom: 0;
     grid-template-columns: 2fr 1fr 2fr;

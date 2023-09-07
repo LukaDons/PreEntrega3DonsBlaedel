@@ -94,7 +94,6 @@ main aside p {
 
 #skillsMain {
   grid-area: skillsMain;
-  height: 72.6vh;
   padding-top: 60px;
   display: grid;
   grid-template-columns: 1.5fr 2.5fr 1.2fr;
@@ -246,7 +245,6 @@ main aside p {
 
 #porfolioMain {
   grid-area: porfolioMain;
-  height: 72.6vh;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 0.5fr 1fr;
@@ -298,7 +296,6 @@ main aside p {
 
 #ContactMain {
   grid-area: contactMain;
-  height: 72.6vh;
   display: grid;
   grid-template-columns: 1fr 1.5fr 2.3fr;
   grid-template-rows: 0.5fr 1fr;
@@ -352,6 +349,7 @@ footer {
   display: grid;
   background-color: rgba(68, 66, 66, 0.925);
   height: 12rem;
+  width: 100vw;
   padding-top: 2rem;
   bottom: 0;
   grid-template-columns: 2fr 1fr 2fr;
@@ -688,7 +686,6 @@ header {
   }
   #skillsMain {
     grid-area: skillsMain;
-    height: 72.6vh;
     padding-top: 60px;
     display: grid;
     grid-template-columns: 1fr;
@@ -941,7 +938,7 @@ header {
   footer {
     display: grid;
     background-color: rgba(68, 66, 66, 0.925);
-    height: 200px;
+    height: 12rem;
     width: 100vw;
     padding-top: 30px;
     bottom: 0;
@@ -974,7 +971,7 @@ header {
     padding: 5px;
   }
   #contactFooter {
-    width: 198vw;
+    width: 100vw;
   }
 }
 body {

@@ -60,7 +60,6 @@ main {
 
 #skillsMain {
     grid-area: skillsMain;
-    height: 72.6vh;
     padding-top: 60px;
     display: grid;
     grid-template-columns: 1.5fr 2.5fr 1.2fr;
@@ -253,7 +252,6 @@ main {
 
 #porfolioMain {
     grid-area: porfolioMain;
-    height: 72.6vh;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 0.5fr 1fr;
@@ -314,7 +312,6 @@ main {
 
   #ContactMain {
     grid-area: contactMain;
-    height: 72.6vh;
     display: grid;
     grid-template-columns: 1fr 1.5fr 2.3fr;
     grid-template-rows: 0.5fr 1fr;
