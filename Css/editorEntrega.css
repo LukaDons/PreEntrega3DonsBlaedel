@@ -632,16 +632,6 @@ header {
     align-items: end;
   }
 }
-@media (min-width: 768px) and (max-width: 914px) {
-  #indexImg {
-    height: 350px;
-  }
-  .nombres_index {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-  }
-}
 @media (min-width: 0px) and (max-width: 575px) {
   #indexMain {
     background-image: url(https://josecarlosalmansa.com/img/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg);
@@ -960,6 +950,146 @@ header {
   }
   #contactFooter {
     width: 100vw;
+  }
+}
+@media (min-width: 576px) and (max-width: 1023px) {
+  #skillsMain {
+    grid-area: skillsMain;
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 2.3fr 1.2fr;
+    grid-template-rows: 3fr 0.2fr;
+    grid-template-areas: "skillsMainDos skillsMainTres" "skillsMainDos skillsMainTres";
+  }
+  #skillsMain #skillsMainUno {
+    grid-area: skillsMainUno;
+    padding: 5px;
+    visibility: hidden;
+  }
+  #skillsMain #skillsMainUno #programador {
+    padding: 10px;
+    margin: 4px;
+    width: 6rem;
+    background-color: #636363;
+    border-radius: 1rem;
+    height: fit-content;
+  }
+  #skillsMain #skillsMainDos {
+    grid-area: skillsMainDos;
+    padding: 10px;
+    font-size: 1.3rem;
+  }
+  #skillsMain #skillsMainDos #unic {
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    padding: 8px 12px;
+    color: antiquewhite;
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 1rem;
+    margin-top: 8px;
+  }
+  #skillsMain #skillsMainDos #unic ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+    background-size: 800%;
+    border-radius: 1rem;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+  }
+  #skillsMain #skillsMainDos #skillsInfo {
+    background-color: #636363;
+    border-radius: 1rem;
+    height: fit-content;
+    width: fit-content;
+  }
+  #skillsMain #skillsMainDos #skillsCertificacion {
+    background-color: #636363;
+    border-radius: 1rem;
+    height: fit-content;
+    width: fit-content;
+    padding: 0.6rem;
+  }
+  #skillsMain #skillsMainDos #skillsIcono {
+    display: flex;
+    gap: 1.3rem;
+  }
+  #skillsMain #skillsMainDos #skillsIcono #coder {
+    color: #e5f876;
+  }
+  #skillsMain #skillsMainTres {
+    grid-area: skillsMainTres;
+    padding: 1rem;
+    background-color: #636363;
+    border-radius: 1rem;
+    height: fit-content;
+    width: fit-content;
+    padding-left: 1.6rem;
+    margin-left: 0.5rem;
+    margin-top: 2rem;
+  }
+  #skillsMain #skillsMainTres .imgSkills {
+    width: 5rem;
+    height: 5rem;
+  }
+  #ContactMain {
+    grid-area: contactMain;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "contactMainUno contactMainDos" "contactMainTres contactMainTres";
+  }
+  #ContactMain #contactMainUno {
+    grid-area: contactMainUno;
+    margin: 1rem;
+    justify-self: center;
+    align-self: center;
+    padding: 1rem;
+    background-color: #636363;
+    height: fit-content;
+    border-radius: 1rem;
+    width: fit-content;
+  }
+  #ContactMain #contactMainUno #contactBorde {
+    border: 0.5rem solid black;
+    width: fit-content;
+    padding: 0.8rem;
+  }
+  #ContactMain #contactMainDos {
+    grid-area: contactMainDos;
+    justify-self: center;
+    align-self: center;
+    padding: 1rem;
+    background-color: #636363;
+    height: fit-content;
+    border-radius: 1rem;
+    width: fit-content;
+    margin: 1rem;
+    margin-left: 1.4rem;
+  }
+  #ContactMain #contactMainDos .contactInfo {
+    margin: 0;
+  }
+  #ContactMain #contactMainTres {
+    grid-area: contactMainTres;
+    justify-self: center;
+    padding: 1.3rem;
+    align-self: center;
+    display: flex;
+    background-color: #636363;
+    height: fit-content;
+    border-radius: 1rem;
+    width: fit-content;
+    margin: 1rem;
+    padding-left: 8rem;
   }
 }
 body {
