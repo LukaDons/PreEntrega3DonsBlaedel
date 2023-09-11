@@ -42,7 +42,6 @@ main {
         justify-self: center;
         align-content: center;
         text-align: center;
-        background-position: center bottom;
         background-position: left;
         padding: 10rem;
 
@@ -155,6 +154,7 @@ main {
             padding-left: 1rem;
             margin-left: 4.5rem;
             margin-top: 5rem;
+            text-align: center;
 
         .imgSkills {
             width: 5rem;
@@ -314,7 +314,7 @@ main {
   #ContactMain {
     grid-area: contactMain;
     display: grid;
-    grid-template-columns: 1fr 1.5fr 2.3fr;
+    grid-template-columns: 1fr 1.5fr 2fr;
     grid-template-rows: 0.5fr 1fr;
     grid-template-areas: 
     "contactMainUno contactMainDos contactMainTres" 
@@ -353,11 +353,16 @@ main {
         .contactInfo {
             margin: 0;
         }
+
+        .contactIconos{
+            margin: 3rem;
+            height: 4rem;
+        }
       }
 
       #contactMainTres {
         grid-area: contactMainTres;
-        justify-self: end;
+        justify-self: center;
         padding: 1.3rem;
         align-self: center;
         display: flex;
@@ -366,6 +371,88 @@ main {
         border-radius: 1rem;
         width: fit-content;
         margin: 1rem;
+        padding-left: 6rem;
       } 
   }
+
+  #errorMain {
+    width: 100vw;
+    grid-area: errorMain;
+    min-height: auto;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 2.5fr 0.5fr;
+    grid-template-rows:2fr 0.3fr;
+    grid-template-areas: 
+    "errorMainUno errorMainDos"
+    "errorMainUno errorMainDos";
+
+    #errorMainUno {
+        grid-area: errorMainUno;
+        justify-self: center;
+        align-content: center;
+        text-align: center;
+        background-position: left;
+        font-size: 1rem;
+        padding: 1.3rem;
+        background-color: #636363;
+        height: fit-content;
+        border-radius: 1rem;
+        width: fit-content;
+        margin: 2rem;
+
+        #errorImg {
+            height: 20rem;
+        }
+
+        #unic   {
+            background-color: black;
+            cursor: pointer;
+            border: none;
+            padding: 1rem 2rem;
+            color: antiquewhite;
+            font-size: 2rem;
+            font-weight: bold;
+            position: relative;
+            border-radius: 1rem;
+        }
+        
+        #unic ::before {
+            content:"";
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg,
+            red,blue, deeppink, blue, red,blue, deeppink, blue);
+        background-size: 800%;
+        border-radius: 1rem;
+        filter: blur(8px);
+        animation: glowing 20s linear infinite;
+        
+        }
+        
+    }
+
+    #errorMainDos {
+        grid-area: errorMainDos;
+        justify-self: end;
+        font-size: 1rem;
+        padding: 1.3rem;
+        background-color: #636363;
+        height: fit-content;
+        border-radius: 1rem;
+        width: fit-content;
+        margin: 2rem;
+        text-align: center;
+        padding-top: 2rem;
+        }
+
+        #errorImg2 {
+            height: 11rem;
+    }
+}
   

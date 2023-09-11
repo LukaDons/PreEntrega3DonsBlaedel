@@ -76,3 +76,13 @@ body {
      "contactMain contactMain contactMain"
      "contactFooter contactFooter contactFooter";
   }
+  
+  #errorbody {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 0.5fr 9fr 0.7fr;
+    grid-template-areas: 
+    "errorHeader errorHeader errorHeader"
+    "errorMain errorMain errorMain"
+    "errorFooter errorFooter errorFooter";
+}

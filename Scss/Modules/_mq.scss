@@ -70,7 +70,6 @@
           justify-self: center;
           align-content: center;
           text-align: center;
-          background-position: center bottom;
           background-position: left;
           padding: 10rem;
   
@@ -83,6 +82,14 @@
       #indexMainDos {
           grid-area: indexMainDos;
       }
+  }
+
+  #skillsHeader {
+    grid-area: skillsHeader;
+
+    #skillsHeaderUno {
+      font-size: 1.1rem;
+    }
   }
   
   #skillsMain {
@@ -115,6 +122,7 @@
       #skillsMainDos {
           grid-area: skillsMainDos;
           padding: 10px;
+          font-size: 1.8rem;
 
   
           #unic   {
@@ -188,6 +196,7 @@
               margin-left: 6rem;
               margin-top: 5rem;
               margin-bottom: 2rem;
+              text-align: center;
   
           .imgSkills {
               width: 5rem;
@@ -354,8 +363,8 @@
       grid-template-columns:1fr 1fr;
     grid-template-rows: 2fr 1fr;
     grid-template-areas: 
-    "contactMainUno contactMainDos" 
-    "contactMainTres contactMainTres";
+    "contactMainDos contactMainDos" 
+    "contactMainUno contactMainTres";
   
       #contactMainUno {
           grid-area: contactMainUno;
@@ -390,6 +399,11 @@
           .contactInfo {
               margin: 0;
           }
+
+          .contactIconos{
+            margin: 3rem;
+            height: 4rem;
+        }
         }
   
         #contactMainTres {
@@ -460,7 +474,7 @@
 
   }
 
-  @media (min-width: 576px) and (max-width: 1023px) {
+  @media (min-width: 576px) and (max-width: 1024px) {
 
     #skillsMain {
       grid-area: skillsMain;
@@ -562,6 +576,7 @@
               padding-left: 1.6rem;
               margin-left: 0.5rem;
               margin-top: 2rem;
+              text-align: center;
 
   
           .imgSkills {
@@ -628,7 +643,7 @@
           border-radius: 1rem;
           width: fit-content;
           margin: 1rem;
-          padding-left: 8rem;
+          padding-left: 3rem;
 
           
 

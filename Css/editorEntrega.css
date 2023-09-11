@@ -80,7 +80,6 @@ main aside p {
   justify-self: center;
   align-content: center;
   text-align: center;
-  background-position: center bottom;
   background-position: left;
   padding: 10rem;
 }
@@ -171,6 +170,7 @@ main aside p {
   padding-left: 1rem;
   margin-left: 4.5rem;
   margin-top: 5rem;
+  text-align: center;
 }
 #skillsMain #skillsMainTres .imgSkills {
   width: 5rem;
@@ -298,7 +298,7 @@ main aside p {
 #ContactMain {
   grid-area: contactMain;
   display: grid;
-  grid-template-columns: 1fr 1.5fr 2.3fr;
+  grid-template-columns: 1fr 1.5fr 2fr;
   grid-template-rows: 0.5fr 1fr;
   grid-template-areas: "contactMainUno contactMainDos contactMainTres" "contactMainUno contactMainDos contactMainTres";
 }
@@ -333,9 +333,13 @@ main aside p {
 #ContactMain #contactMainDos .contactInfo {
   margin: 0;
 }
+#ContactMain #contactMainDos .contactIconos {
+  margin: 3rem;
+  height: 4rem;
+}
 #ContactMain #contactMainTres {
   grid-area: contactMainTres;
-  justify-self: end;
+  justify-self: center;
   padding: 1.3rem;
   align-self: center;
   display: flex;
@@ -344,6 +348,77 @@ main aside p {
   border-radius: 1rem;
   width: fit-content;
   margin: 1rem;
+  padding-left: 6rem;
+}
+
+#errorMain {
+  width: 100vw;
+  grid-area: errorMain;
+  min-height: auto;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 2.5fr 0.5fr;
+  grid-template-rows: 2fr 0.3fr;
+  grid-template-areas: "errorMainUno errorMainDos" "errorMainUno errorMainDos";
+}
+#errorMain #errorMainUno {
+  grid-area: errorMainUno;
+  justify-self: center;
+  align-content: center;
+  text-align: center;
+  background-position: left;
+  font-size: 1rem;
+  padding: 1.3rem;
+  background-color: #636363;
+  height: fit-content;
+  border-radius: 1rem;
+  width: fit-content;
+  margin: 2rem;
+}
+#errorMain #errorMainUno #errorImg {
+  height: 20rem;
+}
+#errorMain #errorMainUno #unic {
+  background-color: black;
+  cursor: pointer;
+  border: none;
+  padding: 1rem 2rem;
+  color: antiquewhite;
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+  border-radius: 1rem;
+}
+#errorMain #errorMainUno #unic ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+  background-size: 800%;
+  border-radius: 1rem;
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+}
+#errorMain #errorMainDos {
+  grid-area: errorMainDos;
+  justify-self: end;
+  font-size: 1rem;
+  padding: 1.3rem;
+  background-color: #636363;
+  height: fit-content;
+  border-radius: 1rem;
+  width: fit-content;
+  margin: 2rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+#errorMain #errorImg2 {
+  height: 11rem;
 }
 
 footer {
@@ -400,6 +475,10 @@ footer #footerCuatro {
 
 #contactFooter {
   grid-area: contactFooter;
+}
+
+#errorFooter {
+  grid-area: errorFooter;
 }
 
 body {
@@ -461,6 +540,13 @@ body a {
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 0.5fr 3fr 0.7fr;
   grid-template-areas: "contactHeader contactHeader contactHeader" "contactMain contactMain contactMain" "contactFooter contactFooter contactFooter";
+}
+
+#errorbody {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 0.5fr 9fr 0.7fr;
+  grid-template-areas: "errorHeader errorHeader errorHeader" "errorMain errorMain errorMain" "errorFooter errorFooter errorFooter";
 }
 
 #headerServicios {
@@ -592,6 +678,23 @@ header {
   padding: 2rem;
 }
 
+#errorHeader {
+  grid-area: errorHeader;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "errorHeaderUno errorHeaderDos" "errorHeaderUno errorHeaderDos";
+  height: 6rem;
+}
+#errorHeader #errorHeaderUno {
+  grid-area: errorHeaderUno;
+}
+#errorHeader #errorHeaderDos {
+  grid-area: errorHeaderDos;
+  justify-self: end;
+  padding: 2rem;
+}
+
 @media screen and (max-width: 737.98px) {
   .abrir-menu,
   .cerrar-menu {
@@ -648,7 +751,6 @@ header {
     justify-self: center;
     align-content: center;
     text-align: center;
-    background-position: center bottom;
     background-position: left;
     padding: 10rem;
   }
@@ -657,6 +759,12 @@ header {
   }
   #indexMain #indexMainDos {
     grid-area: indexMainDos;
+  }
+  #skillsHeader {
+    grid-area: skillsHeader;
+  }
+  #skillsHeader #skillsHeaderUno {
+    font-size: 1.1rem;
   }
   #skillsMain {
     grid-area: skillsMain;
@@ -682,6 +790,7 @@ header {
   #skillsMain #skillsMainDos {
     grid-area: skillsMainDos;
     padding: 10px;
+    font-size: 1.8rem;
   }
   #skillsMain #skillsMainDos #unic {
     background-color: black;
@@ -741,6 +850,7 @@ header {
     margin-left: 6rem;
     margin-top: 5rem;
     margin-bottom: 2rem;
+    text-align: center;
   }
   #skillsMain #skillsMainTres .imgSkills {
     width: 5rem;
@@ -867,7 +977,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 1fr;
-    grid-template-areas: "contactMainUno contactMainDos" "contactMainTres contactMainTres";
+    grid-template-areas: "contactMainDos contactMainDos" "contactMainUno contactMainTres";
   }
   #ContactMain #contactMainUno {
     grid-area: contactMainUno;
@@ -899,6 +1009,10 @@ header {
   }
   #ContactMain #contactMainDos .contactInfo {
     margin: 0;
+  }
+  #ContactMain #contactMainDos .contactIconos {
+    margin: 3rem;
+    height: 4rem;
   }
   #ContactMain #contactMainTres {
     grid-area: contactMainTres;
@@ -952,7 +1066,7 @@ header {
     width: 100vw;
   }
 }
-@media (min-width: 576px) and (max-width: 1023px) {
+@media (min-width: 576px) and (max-width: 1024px) {
   #skillsMain {
     grid-area: skillsMain;
     padding-top: 60px;
@@ -1035,6 +1149,7 @@ header {
     padding-left: 1.6rem;
     margin-left: 0.5rem;
     margin-top: 2rem;
+    text-align: center;
   }
   #skillsMain #skillsMainTres .imgSkills {
     width: 5rem;
@@ -1089,7 +1204,7 @@ header {
     border-radius: 1rem;
     width: fit-content;
     margin: 1rem;
-    padding-left: 8rem;
+    padding-left: 3rem;
   }
 }
 body {
