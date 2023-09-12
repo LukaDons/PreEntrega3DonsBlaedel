@@ -34,48 +34,27 @@
 <main id="contactMain" >
 
     <section id="contactMainUno">
-        <div>
-            <h3>Contactame si estas interesado!!</h3>
-        </div>
-        <div class="col-12 col-md-7 col-lg-6 col-xl-6 col-xxl-6 formulario" id="contactBorde">
-            <div class="row">
-              <div class="col-12 col-md-3 w-50">
-                <input type="nombre" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
-              </div>
-              <div class="col-12 col-md-3 w-50">
-                <input type="apellido" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 col-md-6 w-100">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Mail">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 col-md-6 w-100">
-                <input type="contacto" class="form-control" id="exampleFormControlInput1" placeholder="Contacto">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 col-md-6 w-100">
-                <input type="asunto" class="form-control" id="exampleFormControlInput1" placeholder="Asunto">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 col-md-6 col-lg-7 col-xl-7 col-xxl-2 w-100">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje"></textarea>
-              </div>
-            </div>
-            
-            <div class="row button">
-              <div class="col">
-                <button type="button" id="unic" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                  Enviar
-                </button>
-              </div>
-            </div>
-          </div>
-          
+        <div class="container">  
+          <form id="contact" action="" method="post">
+            <h3>Contactanos</h3>
+            <h4>Contactanos y responderemos en las proximas 24hrs habiles!!</h4>
+            <fieldset>
+              <input placeholder="Tu Nombre" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+              <input placeholder="Direccion de email" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+              <input placeholder="numero de telefono" type="tel" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+              <textarea placeholder="Envianos tu mensaje..." tabindex="5" required></textarea>
+            </fieldset>
+            <fieldset>
+              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Enviar</button>
+            </fieldset>
+          </form>
+         
           
         </div>
 
