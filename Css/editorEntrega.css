@@ -145,6 +145,7 @@ main aside p {
   border-radius: 1rem;
   height: fit-content;
   width: fit-content;
+  padding: 1rem;
 }
 #skillsMain #skillsMainDos #skillsCertificacion {
   background-color: #636363;
@@ -328,7 +329,6 @@ main aside p {
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
-  font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 #ContactMain #contactMainUno body {
@@ -441,7 +441,7 @@ main aside p {
   margin: 0;
 }
 #ContactMain #contactMainDos .contactIconos {
-  margin: 3rem;
+  margin: 1rem;
   height: 4rem;
 }
 #ContactMain #contactMainTres {
@@ -455,7 +455,7 @@ main aside p {
   border-radius: 1rem;
   width: fit-content;
   margin: 1rem;
-  padding-left: 6rem;
+  text-align: center;
 }
 
 #errorMain {
@@ -545,11 +545,17 @@ footer #footerUno {
   align-self: center;
   padding: 0.5rem;
 }
+footer #footerUno .footerIconos {
+  height: 7rem;
+}
 footer #footerDos {
   grid-area: footerDos;
   justify-self: center;
   align-self: center;
   padding: 0.5rem;
+}
+footer #footerDos .footerIconos {
+  height: 7rem;
 }
 footer #footerTres {
   grid-area: footerTres;
@@ -557,11 +563,14 @@ footer #footerTres {
   align-self: center;
   padding: 0.5rem;
 }
+footer #footerTres .footerIconos {
+  height: 7rem;
+}
 footer #footerCuatro {
   grid-area: footerCuatro;
   align-self: center;
   justify-self: center;
-  padding: 5px;
+  padding: 7px;
 }
 
 #indexFooter {
@@ -1118,7 +1127,7 @@ header {
     margin: 0;
   }
   #ContactMain #contactMainDos .contactIconos {
-    margin: 3rem;
+    margin: 1rem;
     height: 4rem;
   }
   #ContactMain #contactMainTres {
@@ -1132,7 +1141,7 @@ header {
     border-radius: 1rem;
     width: fit-content;
     margin: 1rem;
-    padding-left: 8rem;
+    text-align: center;
   }
   footer {
     display: grid;
@@ -1231,6 +1240,7 @@ header {
     border-radius: 1rem;
     height: fit-content;
     width: fit-content;
+    padding: 1rem;
   }
   #skillsMain #skillsMainDos #skillsCertificacion {
     background-color: #636363;

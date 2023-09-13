@@ -16,6 +16,10 @@ footer {
         justify-self: right;
         align-self: center;
         padding: 0.5rem;
+
+        .footerIconos {
+            height: 7rem;
+        }
     }
     
     #footerDos {
@@ -23,6 +27,10 @@ footer {
         justify-self: center;
         align-self: center;
         padding: 0.5rem;
+
+        .footerIconos {
+            height: 7rem;
+        }
     }
     
     #footerTres {
@@ -30,13 +38,17 @@ footer {
         justify-self: left;
         align-self: center;
         padding: 0.5rem;
+
+        .footerIconos {
+            height: 7rem;
+        }
     }
     
     #footerCuatro {
         grid-area: footerCuatro;
         align-self: center;
         justify-self: center;
-        padding: 5px;
+        padding: 7px;
     }
 }
 
