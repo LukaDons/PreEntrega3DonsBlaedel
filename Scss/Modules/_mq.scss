@@ -293,137 +293,74 @@
           
   }
   
-  #porfolioMain {
-      grid-area: porfolioMain;
-      display: grid;
-      margin-top: 3.5rem;
-      grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 0.2fr;
-    grid-template-areas: 
-    "porfolioMainUno " 
-    "porfolioMainUno"
-    "porfolioMainUno"
-    "porfolioMainDos ";
-  
-      #porfolioMainUno {
-          grid-area: porfolioMainUno;
-          background-color: #636363;
-              border-radius: 1rem;
-              padding-bottom: 3rem;
-              padding-top: 4rem;
-              margin: 1rem;
-  
-          .contenedor_proyecto {
-              padding-top: 3rem;
-              padding-bottom: 2rem;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              gap: 1.5rem;
-            }
-            
-            #unic   {
-              background-color: black;
-              cursor: pointer;
-              border: none;
-              padding: 1rem 2rem;
-              color: antiquewhite;
-              font-size: 2rem;
-              font-weight: bold;
-              position: relative;
-              border-radius: 1rem;
-          }
-          
-          #unic ::before {
-              content:"";
-              position: absolute;
-              top: 0;
-              left: 0;
-              z-index: -1;
-              width: 100%;
-              height: 100%;
-              background: linear-gradient(45deg,
-              red,blue, deeppink, blue, red,blue, deeppink, blue);
-          background-size: 800%;
-          border-radius: 1rem;
-          filter: blur(8px);
-          animation: glowing 20s linear infinite;
-          
-          }
-        }
-  
-        #porfolioMainDos {
-          grid-area: porfolioMainDos;
-        }
+  #ContactMain {
+    grid-area: contactMain;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+  grid-template-rows: 1.5fr 1.5fr;
+  grid-template-areas: 
+  "contactMainUno contactMainDos" 
+  "contactMainTres contactMainTres";
+
+    #contactMainUno {
+        grid-area: contactMainUno;
+        margin: 1rem;
+        justify-self: center;
+        align-self: center;
+        padding: 1rem;
+        background-color: #636363;
+        height: fit-content;
+        border-radius: 1rem;
+        width: fit-content;
+
+    #contactBorde{
+        border: 0.5rem solid black;
+    width: fit-content;
+    padding: 0.8rem;
     }
-  
-    #ContactMain {
-      grid-area: contactMain;
-      display: grid;
-      grid-template-columns:1fr 1fr;
-    grid-template-rows: 2fr 1fr;
-    grid-template-areas: 
-    "contactMainDos contactMainDos" 
-    "contactMainUno contactMainTres";
-  
-      #contactMainUno {
-          grid-area: contactMainUno;
-          margin: 1rem;
-          justify-self: center;
-          align-self: center;
-          padding: 1rem;
-          background-color: #636363;
-          height: fit-content;
-          border-radius: 1rem;
-          width: fit-content;
-  
-      #contactBorde{
-          border: 0.5rem solid black;
-      width: fit-content;
-      padding: 0.8rem;
       }
-        }
-  
-        #contactMainDos {
-          grid-area: contactMainDos;
-          justify-self: center;
-          align-self: center;
-          padding: 1rem;
-          background-color: #636363;
-          height: fit-content;
-          border-radius: 1rem;
-          width: fit-content;
-          margin: 1rem;
-          margin-left: 1.4rem;
-  
-          .contactInfo {
-              margin: 0;
-          }
 
-          .contactIconos{
-            margin: 1rem;
-            height: 4rem;
-        }
-        }
-  
-        #contactMainTres {
-          grid-area: contactMainTres;
-          justify-self: center;
-          padding: 1.3rem;
-          align-self: center;
-          display: flex;
-          background-color: #636363;
-          height: fit-content;
-          border-radius: 1rem;
-          width: fit-content;
-          margin: 1rem;
-          text-align: center;
+      #contactMainDos {
+        grid-area: contactMainDos;
+        justify-self: center;
+        align-self: center;
+        padding: 1rem;
+        background-color: #636363;
+        height: fit-content;
+        border-radius: 1rem;
+        width: fit-content;
+        margin: 1rem;
+        margin-left: 1.4rem;
 
-          
+        .contactInfo {
+            margin: 0;
+        }
+      }
+
+      #contactMainTres {
+        grid-area: contactMainTres;
+        justify-self: center;
+        padding: 1.3rem;
+        align-self: center;
+        display: flex;
+        background-color: #636363;
+        height: fit-content;
+        border-radius: 1rem;
+        width: fit-content;
+        margin: 1rem;
+        padding-left: 3rem;
+        text-align: center;
+
+        #ubicacion {
+          width: 48rem;
+          height: 28rem;
+        }
 
         
-        } 
-    }
+
+      
+      } 
+  }
 
     
   footer {
