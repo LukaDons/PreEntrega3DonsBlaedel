@@ -7,45 +7,44 @@
 
 header {
     background-color: rgba(68, 66, 66, 0.925);
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    max-height: fit-content;
 }
 
 #indexHeader {
     grid-area: indexHeader;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "indexHeaderUno indexHeaderDos"
-    "indexHeaderUno indexHeaderDos";
-    height: 6rem;
-
-    .abrir-menu,
-    .cerrar-menu {
-        display: none;
-
-    }
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "indexHeaderUno indexHeaderDos";
 
     #indexHeaderUno {
         grid-area: indexHeaderUno;
+        display: flex;
+        align-items: center;
     }
     
     #indexHeaderDos {
         grid-area: indexHeaderDos;
-        justify-self: end;
-        padding: 25px;
+        padding:0 25px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
 
         .nav {
             list-style: none;
+            display: flex;
+            gap: 15px; 
         }
 
         .nav-list {
             list-style: none;
             
 
+        }
+
+        .li {
+            float: left;
         }
     
     }
@@ -54,22 +53,40 @@ header {
 #skillsHeader {
     grid-area: skillsHeader;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: 
-    "skillsHeaderUno skillsHeaderDos"
     "skillsHeaderUno skillsHeaderDos";
-    height: 6rem;
 
     #skillsHeaderUno {
         grid-area: skillsHeaderUno;
+        display: flex;
+        align-items: center;
     
     }
 
     #skillsHeaderDos {
         grid-area: skillsHeaderDos;
-        justify-self: end;
-        padding: 2rem;
+        padding:0 25px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+        .nav {
+            list-style: none;
+            display: flex;
+            gap: 15px; 
+        }
+
+        .nav-list {
+            list-style: none;
+            
+
+        }
+
+        .li {
+            float: left;
+        }
     
     }
 }
@@ -77,22 +94,39 @@ header {
 #serviciosHeader {
     grid-area: serviciosHeader;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: 
-    "serviciosHeaderUno serviciosHeaderDos"
     "serviciosHeaderUno serviciosHeaderDos";
-    height: 6rem;
 
     #serviciosHeaderUno {
         grid-area: serviciosHeaderUno;
-    
+        display: flex;
+        align-items: center;
     }
 
     #serviciosHeaderDos {
         grid-area: serviciosHeaderDos;
-        justify-self: end;
-        padding: 2rem;
+        padding:0 25px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+        .nav {
+            list-style: none;
+            display: flex;
+            gap: 15px; 
+        }
+
+        .nav-list {
+            list-style: none;
+            
+
+        }
+
+        .li {
+            float: left;
+        }
     
     }
 }
@@ -100,63 +134,118 @@ header {
 #porfolioHeader {
     grid-area: porfolioHeader;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: 
-    "porfolioHeaderUno porfolioHeaderDos" 
     "porfolioHeaderUno porfolioHeaderDos";
-    height: 6rem;
 
     #porfolioHeaderUno {
         grid-area: porfolioHeaderUno;
+        display: flex;
+        align-items: center;
       }
 
       #porfolioHeaderDos {
         grid-area: porfolioHeaderDos;
-        justify-self: end;
-        padding: 2rem;
+        padding:0 25px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+        .nav {
+            list-style: none;
+            display: flex;
+            gap: 15px; 
+        }
+
+        .nav-list {
+            list-style: none;
+            
+
+        }
+
+        .li {
+            float: left;
+        }
       }
   }
 
   #contactHeader {
     grid-area: contactHeader;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: 
-    "contactHeaderUno contactHeaderDos" 
     "contactHeaderUno contactHeaderDos";
-    height: 6rem;
 
     #contactHeaderUno {
         grid-area: contactHeaderUno;
+        display: flex;
+        align-items: center;
       }
 
       #contactHeaderDos {
         grid-area: contactHeaderDos;
-        justify-self: end;
-        padding: 2rem;
+        padding:0 25px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+        .nav {
+            list-style: none;
+            display: flex;
+            gap: 15px; 
+        }
+
+        .nav-list {
+            list-style: none;
+            
+
+        }
+
+        .li {
+            float: left;
+        }
       }
   }
 
   #errorHeader {
     grid-area: errorHeader;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: 
-    "errorHeaderUno errorHeaderDos" 
     "errorHeaderUno errorHeaderDos";
-    height: 6rem;
 
     #errorHeaderUno {
         grid-area: errorHeaderUno;
+        display: flex;
+        align-items: center;
+        font-size: 1.1rem;
       }
 
       #errorHeaderDos {
         grid-area: errorHeaderDos;
-        justify-self: end;
-        padding: 2rem;
+        padding:0 25px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+        .nav {
+            list-style: none;
+            display: flex;
+            gap: 15px; 
+        }
+
+        .nav-list {
+            list-style: none;
+            
+
+        }
+
+        .li {
+            float: left;
+        }
       }
   }
 
