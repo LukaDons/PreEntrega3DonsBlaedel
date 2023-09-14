@@ -54,7 +54,6 @@
   
 }
 
-
 // MOBILE
   @media (min-width: 0px) and (max-width: 575px) {
 
@@ -503,8 +502,6 @@
   width: 100vw;
 }
 
-  }
-
   #skillsHeader {
     grid-area: skillsHeader;
 
@@ -528,544 +525,9 @@
       font-size: 1.1rem;
     }
   }
-
-//   Vista tablet
-
-  @media (min-width: 576px) and (max-width: 1024px) {
-
-    #skillsMain {
-      grid-area: skillsMain;
-      padding-top: 60px;
-      display: grid;
-      grid-template-columns:2.3fr 1.2fr;
-      grid-template-rows: 3fr 0.2fr;
-      grid-template-areas: 
-      "skillsMainDos skillsMainTres"
-      "skillsMainDos skillsMainTres";
-  
-      #skillsMainUno {
-          grid-area: skillsMainUno;
-          padding: 5px;
-          visibility: hidden;
-  
-          #programador {
-              padding: 10px;
-              margin: 4px;
-              width: 6rem;
-              background-color: #636363;
-              border-radius: 1rem;
-              height: fit-content;
-          
-          }
-      }
-  
-      #skillsMainDos {
-          grid-area: skillsMainDos;
-          padding: 10px;
-          font-size: 1.3rem;
-  
-          #unic   {
-              background-color: black;
-              cursor: pointer;
-              border: none;
-              padding: 8px 12px;
-              color: antiquewhite;
-              font-size: 22px;
-              font-weight: bold;
-              position: relative;
-              border-radius: 1rem;
-              margin-top: 8px;
-          }
-          
-          #unic ::before {
-              content:"";
-              position: absolute;
-              top: 0;
-              left: 0;
-              z-index: -1;
-              width: 100%;
-              height: 100%;
-              background: linear-gradient(45deg,
-              red,blue, deeppink, blue, red,blue, deeppink, blue);
-          background-size: 800%;
-          border-radius: 1rem;
-          filter: blur(8px);
-          animation: glowing 20s linear infinite;
-          
-          }
-  
-          #skillsInfo {
-              background-color: #636363;
-              border-radius: 1rem;
-              height: fit-content;
-              width: fit-content;
-              padding: 1rem;
-  
-          }
-  
-          #skillsCertificacion {
-              background-color: #636363;
-              border-radius: 1rem;
-              height: fit-content;
-              width: fit-content;
-              padding: 0.6rem;
-          }
-  
-          #skillsIcono {
-  
-              display: flex;
-              gap: 1.3rem;
-  
-              #coder {
-                  color: $paleta_colores-coder;
-              }
-          }
-          
-         
-      }
-      
-      #skillsMainTres {
-          grid-area: skillsMainTres;
-          padding: 0.2rem;
-          background-color: #636363;
-              border-radius: 1rem;
-              height: fit-content;
-              width: fit-content;
-              margin-left: 0.5rem;
-              margin-top: 2rem;
-              text-align: center;
-
-  
-          .imgSkills {
-              width: 5rem;
-              height: 5rem;
-           }
-      }
   }
 
-  #serviciosMain {
-    grid-area: serviciosMain;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 1fr 1fr 2fr;
-    grid-template-areas: 
-    "serviciosMainUno serviciosMainDos"
-    "serviciosMainTres serviciosMainCuatro "
-    "serviciosMainCinco serviciosMainCinco";
-
-    .serviciosIconos {
-        display: flex;
-        background-color: rgba(128, 128, 128, 0.925);
-        height: fit-content;
-        border-radius: 1rem;
-        width: fit-content;
-        padding: 0.5rem;
-        padding-right: 1rem;
-    }
-
-    .contact-iconos {
-        width: 4.9rem;
-        height: 5rem;
-        
-    }
-
-    .serviciosTexto {
-        background-color: $c-secundario;
-        border-radius: 1rem;
-        padding: 0.4rem;
-        text-align: center;
-    }
-
-    #serviciosMainUno {
-        grid-area: serviciosMainUno;
-        padding: 2rem;
-        margin: 3rem;
-    }
-    
-    #serviciosMainDos {
-        grid-area: serviciosMainDos;
-        padding: 2rem;
-        margin: 3rem;
-        padding-top: 10rem;
-        
-    }
-
-    #serviciosMainTres {
-        grid-area: serviciosMainTres;
-        padding: 2rem;
-        margin: 3rem;
-
-    }
-
-    #serviciosMainCuatro {
-        grid-area: serviciosMainCuatro;
-        padding: 2rem;
-        margin: 3rem;
-    }
-
-    #serviciosMainCinco {
-        grid-area: serviciosMainCinco;
-        padding: 2rem;
-        margin: 3rem;
-        background-color: rgba(255, 255, 255, 0.4);
-        border-radius: 1rem;
-       text-align: center;
-       margin-top: 3rem;
-       margin-bottom: 2rem;
-       justify-self: center;
-        
-        
-       
-
-       .imgClientes {
-        height: 8rem;
-        width: 8rem;
-        border-radius: 1rem;
-        padding: 0.5rem;
-       }
-    }
-
-
-        
-}
-
-  
-
-    #ContactMain {
-      grid-area: contactMain;
-      display: grid;
-      grid-template-columns:1fr 1fr;
-    grid-template-rows: 2fr 1fr;
-    grid-template-areas: 
-    "contactMainUno contactMainDos" 
-    "contactMainTres contactMainTres";
-  
-      #contactMainUno {
-          grid-area: contactMainUno;
-          margin: 1rem;
-          justify-self: center;
-          align-self: center;
-          padding: 1rem;
-          background-color: #636363;
-          height: fit-content;
-          border-radius: 1rem;
-          width: fit-content;
-  
-      #contactBorde{
-          border: 0.5rem solid black;
-      width: fit-content;
-      padding: 0.8rem;
-      }
-        }
-  
-        #contactMainDos {
-          grid-area: contactMainDos;
-          justify-self: center;
-          align-self: center;
-          padding: 1rem;
-          background-color: #636363;
-          height: fit-content;
-          border-radius: 1rem;
-          width: fit-content;
-          margin: 1rem;
-          margin-left: 1.4rem;
-  
-          .contactInfo {
-              margin: 0;
-          }
-        }
-  
-        #contactMainTres {
-          grid-area: contactMainTres;
-          justify-self: center;
-          padding: 1.3rem;
-          align-self: center;
-          display: flex;
-          background-color: #636363;
-          height: fit-content;
-          border-radius: 1rem;
-          width: fit-content;
-          margin: 1rem;
-          padding-left: 3rem;
-
-          
-
-        
-        } 
-    }
-
-    #errorMain {
-        width: 100vw;
-        grid-area: errorMain;
-        min-height: auto;
-        margin-bottom: 4rem;
-        margin-top: 4rem;
-        display: grid;
-        grid-template-columns: 2.5fr 0.5fr;
-        grid-template-rows:2fr 0.3fr;
-        grid-template-areas: 
-        "errorMainUno errorMainDos"
-        "errorMainUno errorMainDos";
-    
-        #errorMainUno {
-            grid-area: errorMainUno;
-            justify-self: center;
-            align-content: center;
-            text-align: center;
-            background-position: left;
-            font-size: 0.7rem;
-            padding: 0.6rem;
-            background-color: #636363;
-            height: fit-content;
-            border-radius: 1rem;
-            width: fit-content;
-            margin: 1rem;
-    
-            #errorImg {
-                height: 10rem;
-            }
-    
-            #unic   {
-                background-color: black;
-                cursor: pointer;
-                border: none;
-                padding: 1rem 2rem;
-                color: antiquewhite;
-                font-size: 2rem;
-                font-weight: bold;
-                position: relative;
-                border-radius: 1rem;
-            }
-            
-            #unic ::before {
-                content:"";
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: -1;
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(45deg,
-                red,blue, deeppink, blue, red,blue, deeppink, blue);
-            background-size: 800%;
-            border-radius: 1rem;
-            filter: blur(8px);
-            animation: glowing 20s linear infinite;
-            
-            }
-            
-        }
-    
-        #errorMainDos {
-            grid-area: errorMainDos;
-            justify-self: end;
-            font-size: 0.7rem;
-            padding: 0.3rem;
-            background-color: #636363;
-            height: fit-content;
-            border-radius: 1rem;
-            width: fit-content;
-            margin: 1rem;
-            text-align: center;
-            padding-top: 1rem;
-            }
-    
-            #errorImg2 {
-                height: 7rem;
-        }
-    }
-
-    
-
-  }
-
-//   Vista Tablet
-@media (min-width: 1025px) and (max-width: 1440px){
-
-    #skillsMain {
-        grid-area: skillsMain;
-        padding-top: 60px;
-        display: grid;
-        grid-template-columns: 1.5fr 1.5fr;
-        grid-template-rows: 1fr 1fr 0.2fr;
-        grid-template-areas:
-        "skillsMainUno skillsMainDos "
-        "skillsMainTres skillsMainDos "
-        "skillsMainTres skillsMainDos ";
-    
-        #skillsMainUno {
-            grid-area: skillsMainUno;
-            padding: 1.5rem;
-            justify-self: center;
-    
-            #programador {
-                padding: 50px;
-                margin: 10px;
-                width: 16rem;
-                background-color: #636363;
-                border-radius: 1rem;
-                height: fit-content;
-            
-            }
-        }
-    
-        #skillsMainDos {
-            grid-area: skillsMainDos;
-            padding: 10px;
-            font-size: 1.3rem;
-            align-self: center;
-    
-            #unic   {
-                background-color: black;
-                cursor: pointer;
-                border: none;
-                padding: 8px 12px;
-                color: antiquewhite;
-                font-size: 22px;
-                font-weight: bold;
-                position: relative;
-                border-radius: 1rem;
-                margin-top: 8px;
-            }
-            
-            #unic ::before {
-                content:"";
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: -1;
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(45deg,
-                red,blue, deeppink, blue, red,blue, deeppink, blue);
-            background-size: 800%;
-            border-radius: 1rem;
-            filter: blur(8px);
-            animation: glowing 20s linear infinite;
-            
-            }
-    
-            #skillsInfo {
-                background-color: #636363;
-                border-radius: 1rem;
-                height: fit-content;
-                width: fit-content;
-                padding: 1rem;
-    
-            }
-    
-            #skillsCertificacion {
-                background-color: #636363;
-                border-radius: 1rem;
-                height: fit-content;
-                width: fit-content;
-                padding: 0.6rem;
-            }
-    
-            #skillsIcono {
-    
-                display: flex;
-                gap: 1.3rem;
-    
-                #coder {
-                    color: $paleta_colores-coder;
-                }
-            }
-            
-           
-        }
-        
-        #skillsMainTres {
-            grid-area: skillsMainTres;
-            padding: 0.2rem;
-            background-color: #636363;
-                border-radius: 1rem;
-                height: fit-content;
-                width: fit-content;
-                margin-left: 0.5rem;
-                margin-top: 2rem;
-                text-align: center;
-                justify-self: center;
-                padding: 3rem;
-  
-    
-            .imgSkills {
-                width: 7rem;
-                height: 7rem;
-             }
-        }
-
-  }
-
-  #ContactMain {
-    grid-area: contactMain;
-    display: grid;
-    grid-template-columns:1fr 1fr;
-  grid-template-rows: 2fr 1fr;
-  grid-template-areas: 
-  "contactMainUno contactMainDos" 
-  "contactMainTres contactMainTres";
-
-    #contactMainUno {
-        grid-area: contactMainUno;
-        margin: 1rem;
-        justify-self: center;
-        align-self: center;
-        padding: 1rem;
-        background-color: #636363;
-        height: fit-content;
-        border-radius: 1rem;
-        width: fit-content;
-
-    #contactBorde{
-        border: 0.5rem solid black;
-    width: fit-content;
-    padding: 0.8rem;
-    }
-      }
-
-      #contactMainDos {
-        grid-area: contactMainDos;
-        justify-self: center;
-        align-self: center;
-        padding: 1rem;
-        background-color: #636363;
-        height: fit-content;
-        border-radius: 1rem;
-        width: fit-content;
-        margin: 1rem;
-        margin-left: 1.4rem;
-
-        .contactInfo {
-            margin: 0;
-        }
-      }
-
-      #contactMainTres {
-        grid-area: contactMainTres;
-        justify-self: center;
-        padding: 1.3rem;
-        align-self: center;
-        display: flex;
-        background-color: #636363;
-        height: fit-content;
-        border-radius: 1rem;
-        width: fit-content;
-        margin: 1rem;
-        padding-left: 3rem;
-
-        
-
-      
-      } 
-  }
-
-  
-
-}
-
-@media (min-width: 576px) and (max-width: 865px) {
+  @media (min-width: 576px) and (max-width: 865px) {
 
     #skillsMain {
         grid-area: skillsMain;
@@ -1422,5 +884,541 @@
                 height: 7rem;
         }
     }
+
+}
+
+
+@media (min-width: 576px) and (max-width: 1024px) {
+
+    #skillsMain {
+      grid-area: skillsMain;
+      padding-top: 60px;
+      display: grid;
+      grid-template-columns:2.3fr 1.2fr;
+      grid-template-rows: 3fr 0.2fr;
+      grid-template-areas: 
+      "skillsMainDos skillsMainTres"
+      "skillsMainDos skillsMainTres";
+  
+      #skillsMainUno {
+          grid-area: skillsMainUno;
+          padding: 5px;
+          visibility: hidden;
+  
+          #programador {
+              padding: 10px;
+              margin: 4px;
+              width: 6rem;
+              background-color: #636363;
+              border-radius: 1rem;
+              height: fit-content;
+          
+          }
+      }
+  
+      #skillsMainDos {
+          grid-area: skillsMainDos;
+          padding: 10px;
+          font-size: 1.3rem;
+  
+          #unic   {
+              background-color: black;
+              cursor: pointer;
+              border: none;
+              padding: 8px 12px;
+              color: antiquewhite;
+              font-size: 22px;
+              font-weight: bold;
+              position: relative;
+              border-radius: 1rem;
+              margin-top: 8px;
+          }
+          
+          #unic ::before {
+              content:"";
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: -1;
+              width: 100%;
+              height: 100%;
+              background: linear-gradient(45deg,
+              red,blue, deeppink, blue, red,blue, deeppink, blue);
+          background-size: 800%;
+          border-radius: 1rem;
+          filter: blur(8px);
+          animation: glowing 20s linear infinite;
+          
+          }
+  
+          #skillsInfo {
+              background-color: #636363;
+              border-radius: 1rem;
+              height: fit-content;
+              width: fit-content;
+              padding: 1rem;
+  
+          }
+  
+          #skillsCertificacion {
+              background-color: #636363;
+              border-radius: 1rem;
+              height: fit-content;
+              width: fit-content;
+              padding: 0.6rem;
+          }
+  
+          #skillsIcono {
+  
+              display: flex;
+              gap: 1.3rem;
+  
+              #coder {
+                  color: $paleta_colores-coder;
+              }
+          }
+          
+         
+      }
+      
+      #skillsMainTres {
+          grid-area: skillsMainTres;
+          padding: 0.2rem;
+          background-color: #636363;
+              border-radius: 1rem;
+              height: fit-content;
+              width: fit-content;
+              margin-left: 0.5rem;
+              margin-top: 2rem;
+              text-align: center;
+
+  
+          .imgSkills {
+              width: 5rem;
+              height: 5rem;
+           }
+      }
+  }
+
+  #serviciosMain {
+    grid-area: serviciosMain;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-areas: 
+    "serviciosMainUno serviciosMainDos"
+    "serviciosMainTres serviciosMainCuatro "
+    "serviciosMainCinco serviciosMainCinco";
+
+    .serviciosIconos {
+        display: flex;
+        background-color: rgba(128, 128, 128, 0.925);
+        height: fit-content;
+        border-radius: 1rem;
+        width: fit-content;
+        padding: 0.5rem;
+        padding-right: 1rem;
+    }
+
+    .contact-iconos {
+        width: 4.9rem;
+        height: 5rem;
+        
+    }
+
+    .serviciosTexto {
+        background-color: $c-secundario;
+        border-radius: 1rem;
+        padding: 0.4rem;
+        text-align: center;
+    }
+
+    #serviciosMainUno {
+        grid-area: serviciosMainUno;
+        padding: 2rem;
+        margin: 3rem;
+    }
+    
+    #serviciosMainDos {
+        grid-area: serviciosMainDos;
+        padding: 2rem;
+        margin: 3rem;
+        padding-top: 10rem;
+        
+    }
+
+    #serviciosMainTres {
+        grid-area: serviciosMainTres;
+        padding: 2rem;
+        margin: 3rem;
+
+    }
+
+    #serviciosMainCuatro {
+        grid-area: serviciosMainCuatro;
+        padding: 2rem;
+        margin: 3rem;
+    }
+
+    #serviciosMainCinco {
+        grid-area: serviciosMainCinco;
+        padding: 2rem;
+        margin: 3rem;
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 1rem;
+       text-align: center;
+       margin-top: 3rem;
+       margin-bottom: 2rem;
+       justify-self: center;
+        
+        
+       
+
+       .imgClientes {
+        height: 8rem;
+        width: 8rem;
+        border-radius: 1rem;
+        padding: 0.5rem;
+       }
+    }
+
+
+        
+}
+
+  
+
+    #ContactMain {
+      grid-area: contactMain;
+      display: grid;
+      grid-template-columns:1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: 
+    "contactMainUno contactMainDos" 
+    "contactMainTres contactMainTres";
+  
+      #contactMainUno {
+          grid-area: contactMainUno;
+          margin: 1rem;
+          justify-self: center;
+          align-self: center;
+          padding: 1rem;
+          background-color: #636363;
+          height: fit-content;
+          border-radius: 1rem;
+          width: fit-content;
+  
+      #contactBorde{
+          border: 0.5rem solid black;
+      width: fit-content;
+      padding: 0.8rem;
+      }
+        }
+  
+        #contactMainDos {
+          grid-area: contactMainDos;
+          justify-self: center;
+          align-self: center;
+          padding: 1rem;
+          background-color: #636363;
+          height: fit-content;
+          border-radius: 1rem;
+          width: fit-content;
+          margin: 1rem;
+          margin-left: 1.4rem;
+  
+          .contactInfo {
+              margin: 0;
+          }
+        }
+  
+        #contactMainTres {
+          grid-area: contactMainTres;
+          justify-self: center;
+          padding: 1.3rem;
+          align-self: center;
+          display: flex;
+          background-color: #636363;
+          height: fit-content;
+          border-radius: 1rem;
+          width: fit-content;
+          margin: 1rem;
+          padding-left: 3rem;
+
+          
+
+        
+        } 
+    }
+
+    #errorMain {
+        width: 100vw;
+        grid-area: errorMain;
+        min-height: auto;
+        margin-bottom: 4rem;
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: 2.5fr 0.5fr;
+        grid-template-rows:2fr 0.3fr;
+        grid-template-areas: 
+        "errorMainUno errorMainDos"
+        "errorMainUno errorMainDos";
+    
+        #errorMainUno {
+            grid-area: errorMainUno;
+            justify-self: center;
+            align-content: center;
+            text-align: center;
+            background-position: left;
+            font-size: 0.7rem;
+            padding: 0.6rem;
+            background-color: #636363;
+            height: fit-content;
+            border-radius: 1rem;
+            width: fit-content;
+            margin: 1rem;
+    
+            #errorImg {
+                height: 10rem;
+            }
+    
+            #unic   {
+                background-color: black;
+                cursor: pointer;
+                border: none;
+                padding: 1rem 2rem;
+                color: antiquewhite;
+                font-size: 2rem;
+                font-weight: bold;
+                position: relative;
+                border-radius: 1rem;
+            }
+            
+            #unic ::before {
+                content:"";
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(45deg,
+                red,blue, deeppink, blue, red,blue, deeppink, blue);
+            background-size: 800%;
+            border-radius: 1rem;
+            filter: blur(8px);
+            animation: glowing 20s linear infinite;
+            
+            }
+            
+        }
+    
+        #errorMainDos {
+            grid-area: errorMainDos;
+            justify-self: end;
+            font-size: 0.7rem;
+            padding: 0.3rem;
+            background-color: #636363;
+            height: fit-content;
+            border-radius: 1rem;
+            width: fit-content;
+            margin: 1rem;
+            text-align: center;
+            padding-top: 1rem;
+            }
+    
+            #errorImg2 {
+                height: 7rem;
+        }
+    }
+
+    
+
+  }
+
+//   Vista Laptop
+
+@media (min-width: 1025px) and (max-width: 1440px){
+
+    #skillsMain {
+        grid-area: skillsMain;
+        padding-top: 60px;
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr;
+        grid-template-rows: 1fr 1fr 0.2fr;
+        grid-template-areas:
+        "skillsMainUno skillsMainDos "
+        "skillsMainTres skillsMainDos "
+        "skillsMainTres skillsMainDos ";
+    
+        #skillsMainUno {
+            grid-area: skillsMainUno;
+            padding: 1.5rem;
+            justify-self: center;
+    
+            #programador {
+                padding: 50px;
+                margin: 10px;
+                width: 16rem;
+                background-color: #636363;
+                border-radius: 1rem;
+                height: fit-content;
+            
+            }
+        }
+    
+        #skillsMainDos {
+            grid-area: skillsMainDos;
+            padding: 10px;
+            font-size: 1.3rem;
+            align-self: center;
+    
+            #unic   {
+                background-color: black;
+                cursor: pointer;
+                border: none;
+                padding: 8px 12px;
+                color: antiquewhite;
+                font-size: 22px;
+                font-weight: bold;
+                position: relative;
+                border-radius: 1rem;
+                margin-top: 8px;
+            }
+            
+            #unic ::before {
+                content:"";
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(45deg,
+                red,blue, deeppink, blue, red,blue, deeppink, blue);
+            background-size: 800%;
+            border-radius: 1rem;
+            filter: blur(8px);
+            animation: glowing 20s linear infinite;
+            
+            }
+    
+            #skillsInfo {
+                background-color: #636363;
+                border-radius: 1rem;
+                height: fit-content;
+                width: fit-content;
+                padding: 1rem;
+    
+            }
+    
+            #skillsCertificacion {
+                background-color: #636363;
+                border-radius: 1rem;
+                height: fit-content;
+                width: fit-content;
+                padding: 0.6rem;
+            }
+    
+            #skillsIcono {
+    
+                display: flex;
+                gap: 1.3rem;
+    
+                #coder {
+                    color: $paleta_colores-coder;
+                }
+            }
+            
+           
+        }
+        
+        #skillsMainTres {
+            grid-area: skillsMainTres;
+            padding: 0.2rem;
+            background-color: #636363;
+                border-radius: 1rem;
+                height: fit-content;
+                width: fit-content;
+                margin-left: 0.5rem;
+                margin-top: 2rem;
+                text-align: center;
+                justify-self: center;
+                padding: 3rem;
+  
+    
+            .imgSkills {
+                width: 7rem;
+                height: 7rem;
+             }
+        }
+
+  }
+
+  #ContactMain {
+    grid-area: contactMain;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas: 
+  "contactMainUno contactMainDos" 
+  "contactMainTres contactMainTres";
+
+    #contactMainUno {
+        grid-area: contactMainUno;
+        margin: 1rem;
+        justify-self: center;
+        align-self: center;
+        padding: 1rem;
+        background-color: #636363;
+        height: fit-content;
+        border-radius: 1rem;
+        width: fit-content;
+
+    #contactBorde{
+        border: 0.5rem solid black;
+    width: fit-content;
+    padding: 0.8rem;
+    }
+      }
+
+      #contactMainDos {
+        grid-area: contactMainDos;
+        justify-self: center;
+        align-self: center;
+        padding: 1rem;
+        background-color: #636363;
+        height: fit-content;
+        border-radius: 1rem;
+        width: fit-content;
+        margin: 1rem;
+        margin-left: 1.4rem;
+
+        .contactInfo {
+            margin: 0;
+        }
+      }
+
+      #contactMainTres {
+        grid-area: contactMainTres;
+        justify-self: center;
+        padding: 1.3rem;
+        align-self: center;
+        display: flex;
+        background-color: #636363;
+        height: fit-content;
+        border-radius: 1rem;
+        width: fit-content;
+        margin: 1rem;
+        padding-left: 3rem;
+
+        
+
+      
+      } 
+  }
+
+  
 
 }
