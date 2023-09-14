@@ -72,8 +72,8 @@ main aside p {
   min-height: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 3fr 1fr;
-  grid-template-areas: "indexMainUno indexMainUno indexMainUno" "indexMainUno indexMainUno indexMainUno" "indexMainUno indexMainUno indexMainUno";
+  grid-template-rows: 0.7fr 0.3fr;
+  grid-template-areas: "indexMainUno indexMainUno indexMainUno" "indexMainUno indexMainUno indexMainUno";
 }
 #indexMain #indexMainUno {
   grid-area: indexMainUno;
@@ -601,6 +601,10 @@ footer #footerCuatro {
   grid-area: errorFooter;
 }
 
+* {
+  border: 1px solid red;
+}
+
 body {
   font-family: sans-serif;
   font-size: 1.5rem;
@@ -961,27 +965,27 @@ header {
   }
   #skillsMain #skillsMainTres {
     grid-area: skillsMainTres;
-    padding: 4rem;
+    padding: 3.5rem;
     background-color: #636363;
     border-radius: 1rem;
     height: fit-content;
     width: fit-content;
-    padding-left: 1rem;
-    margin-left: 6rem;
     margin-top: 5rem;
     margin-bottom: 2rem;
     text-align: center;
+    justify-self: center;
   }
   #skillsMain #skillsMainTres .imgSkills {
     width: 5rem;
     height: 5rem;
+    margin: 0.5rem;
   }
   #serviciosMain {
     grid-area: serviciosMain;
     justify-content: center;
     display: grid;
     grid-template-columns: 2fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 3fr;
+    grid-template-rows: 0.8fr 0.5fr 0.5fr 0.5fr 2fr;
     grid-template-areas: "serviciosMainUno " "serviciosMainDos" "serviciosMainTres " "serviciosMainCuatro " "serviciosMainCinco ";
   }
   #serviciosMain .serviciosIconos {
@@ -1211,12 +1215,11 @@ header {
   }
   #skillsMain #skillsMainTres {
     grid-area: skillsMainTres;
-    padding: 1rem;
+    padding: 0.2rem;
     background-color: #636363;
     border-radius: 1rem;
     height: fit-content;
     width: fit-content;
-    padding-left: 1.6rem;
     margin-left: 0.5rem;
     margin-top: 2rem;
     text-align: center;

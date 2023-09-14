@@ -187,20 +187,20 @@
       
       #skillsMainTres {
           grid-area: skillsMainTres;
-          padding: 4rem;
+          padding: 3.5rem;
           background-color: #636363;
               border-radius: 1rem;
               height: fit-content;
               width: fit-content;
-              padding-left: 1rem;
-              margin-left: 6rem;
               margin-top: 5rem;
               margin-bottom: 2rem;
               text-align: center;
+              justify-self: center;
   
           .imgSkills {
               width: 5rem;
               height: 5rem;
+              margin: 0.5rem;
            }
       }
   }
@@ -210,7 +210,7 @@
       justify-content: center;
       display: grid;
       grid-template-columns: 2fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 3fr;
+    grid-template-rows: 0.8fr 0.5fr 0.5fr 0.5fr 2fr;
     grid-template-areas: 
     "serviciosMainUno "
     "serviciosMainDos"
@@ -506,12 +506,11 @@
       
       #skillsMainTres {
           grid-area: skillsMainTres;
-          padding: 1rem;
+          padding: 0.2rem;
           background-color: #636363;
               border-radius: 1rem;
               height: fit-content;
               width: fit-content;
-              padding-left: 1.6rem;
               margin-left: 0.5rem;
               margin-top: 2rem;
               text-align: center;
